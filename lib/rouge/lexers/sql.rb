@@ -2075,6 +2075,7 @@ module Rouge
           ui_local_port
           ui_remote_url
           ui_polling_interval
+          late_materialization_max_rows
         ))
       end
 
