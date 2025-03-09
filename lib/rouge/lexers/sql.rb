@@ -912,6 +912,7 @@ module Rouge
           PIN_SNAPSHOT
           PUSHDOWN_PARTITION_INFO
           PUSHDOWN_FILTERS
+          FILE_EXTENSION
         ))
       end
 
