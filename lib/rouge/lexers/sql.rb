@@ -2118,7 +2118,7 @@ module Rouge
           # TODO: the lowercase variant of option_names should only match if it's followed by
           # the regex ' ?:=' or the regex ' ?='
           elsif self.class.keywords.include? m[0] or self.class.option_names.include? m[0].upcase or self.class.option_values.include? m[0]
-            token Keyword
+            token Keyword, m[0].downcase
           elsif self.class.configuration_options.include? m[0]
             token Name::Property
           else
