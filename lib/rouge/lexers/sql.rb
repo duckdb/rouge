@@ -913,6 +913,7 @@ module Rouge
           PUSHDOWN_PARTITION_INFO
           PUSHDOWN_FILTERS
           FILE_EXTENSION
+          ASSUME_ROLE_ARN
         ))
       end
 
@@ -951,6 +952,10 @@ module Rouge
           credentials_chain
           delta
           iceberg
+          glue
+          GLUE
+          s3_tables
+          S3_TABLES
         ))
       end
 
