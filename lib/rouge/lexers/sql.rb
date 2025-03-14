@@ -914,6 +914,7 @@ module Rouge
           PUSHDOWN_FILTERS
           FILE_EXTENSION
           ASSUME_ROLE_ARN
+          TBLPROPERTIES
         ))
       end
 
