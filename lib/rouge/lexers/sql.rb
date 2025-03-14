@@ -956,6 +956,8 @@ module Rouge
           GLUE
           s3_tables
           S3_TABLES
+          sts
+          STS
         ))
       end
 
