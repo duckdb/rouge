@@ -2097,7 +2097,9 @@ module Rouge
         rule %r/"/, Name::Variable, :double_string
         rule %r/`/, Name::Variable, :backtick
         # Text between angle brackets denotes that the user needs to change the input
-        rule %r/⟨/, Name::Attribute, :angle
+        rule %r/⟨([^⟩]+)⟩/ do |m|
+          token Name::Attribute, m[1]
+        end
         # Numbers
         rule %r/-?\d[\d_]*\.\d[\d_]*([Ee]-?\d[\d_]*(\.\d[\d_]*)?)?/, Num::Float
         rule %r/-?\d[\d_]*([Ee]-?\d[\d_]*)?/, Num::Integer
@@ -2149,11 +2151,6 @@ module Rouge
         rule %r([/*]), Comment::Multiline
       end
 
-      state :angle do
-        rule %r/⟩/, Name::Attribute, :pop!
-        rule %r/[^⟩]+/, Name::Attribute
-      end
-
       state :backtick do
         rule %r/``/, Str::Escape
         rule %r/`/, Name::Variable, :pop!
@@ -2161,14 +2158,18 @@ module Rouge
       end
 
       state :single_string do
-        rule %r/⟨/, Name::Attribute, :angle
+        rule %r/⟨([^⟩]+)⟩/ do |m|
+          token Name::Attribute, m[1]
+        end
         rule %r/''/, Str::Escape
         rule %r/'/, Str::Single, :pop!
         rule %r/[^']+/, Str::Single
       end
 
       state :double_string do
-        rule %r/⟨/, Name::Attribute, :angle
+        rule %r/⟨([^⟩]+)⟩/ do |m|
+          token Name::Attribute, m[1]
+        end
         rule %r/""/, Str::Escape
         rule %r/"/, Name::Variable, :pop!
         rule %r/[^"]+/, Name::Variable
