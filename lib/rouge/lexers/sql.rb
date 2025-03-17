@@ -2097,7 +2097,8 @@ module Rouge
         # dialect, which is appropriate for e.g. PostgreSQL and DuckDB.
         rule %r/"/, Name::Variable, :double_string
         rule %r/`/, Name::Variable, :backtick
-        # Text between angle brackets denotes that the user needs to change the input
+        # Text between angle brackets denotes a placeholder
+        # where the user needs to change the input
         rule %r/⟨([^⟩]+)⟩/ do |m|
           token Name::Attribute, m[1]
         end
@@ -2159,6 +2160,7 @@ module Rouge
       end
 
       state :single_string do
+        # handle placeholders
         rule %r/⟨([^⟩]+)⟩/ do |m|
           token Name::Attribute, m[1]
         end

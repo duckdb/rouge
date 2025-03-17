@@ -98,11 +98,15 @@ module Rouge
 
 
       state :double_quotes do
+        # handle placeholders
+        rule %r/⟨([^⟩]+)⟩/ do |m|
+          token Name::Attribute, m[1]
+        end
         # NB: "abc$" is literally the string abc$.
         # Here we prevent :interp from interpreting $" as a variable.
         rule %r/(?:\$#?)?"/, Str::Double, :pop!
         mixin :interp
-        rule %r/[^"`\\$]+/, Str::Double
+        rule %r/[^"`\\$⟨]+/, Str::Double
       end
 
       state :ansi_string do
@@ -112,8 +116,11 @@ module Rouge
       end
 
       state :single_quotes do
+        rule %r/⟨([^⟩]+)⟩/ do |m|
+          token Name::Attribute, m[1]
+        end
         rule %r/'/, Str::Single, :pop!
-        rule %r/[^']+/, Str::Single
+        rule %r/[^'⟨]+/, Str::Single
       end
 
       state :data do
