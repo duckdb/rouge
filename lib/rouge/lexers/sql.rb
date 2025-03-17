@@ -2100,7 +2100,7 @@ module Rouge
         # Text between angle brackets denotes a placeholder
         # where the user needs to change the input
         rule %r/⟨([^⟩]+)⟩/ do |m|
-          token Name::Attribute, m[1]
+          token Generic::Emph, m[1]
         end
         # Numbers
         rule %r/-?\d[\d_]*\.\d[\d_]*([Ee]-?\d[\d_]*(\.\d[\d_]*)?)?/, Num::Float
@@ -2162,7 +2162,7 @@ module Rouge
       state :single_string do
         # handle placeholders
         rule %r/⟨([^⟩]+)⟩/ do |m|
-          token Name::Attribute, m[1]
+          token Generic::Emph, m[1]
         end
         rule %r/''/, Str::Escape
         rule %r/'/, Str::Single, :pop!

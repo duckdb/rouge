@@ -92,7 +92,7 @@ module Rouge
       state :double_quotes do
         # handle placeholders
         rule %r/⟨([^⟩]+)⟩/ do |m|
-          token Name::Attribute, m[1]
+          token Generic::Emph, m[1]
         end
         # NB: "abc$" is literally the string abc$.
         # Here we prevent :interp from interpreting $" as a variable.
@@ -109,7 +109,7 @@ module Rouge
 
       state :single_quotes do
         rule %r/⟨([^⟩]+)⟩/ do |m|
-          token Name::Attribute, m[1]
+          token Generic::Emph, m[1]
         end
         rule %r/'/, Str::Single, :pop!
         rule %r/[^'⟨]+/, Str::Single
