@@ -2111,6 +2111,11 @@ module Rouge
         rule %r/-?\d[\d_]*\.\d[\d_]*([Ee]-?\d[\d_]*(\.\d[\d_]*)?)?/, Num::Float
         rule %r/-?\d[\d_]*([Ee]-?\d[\d_]*)?/, Num::Integer
 
+        rule %r/(INSTALL|LOAD|UPDATE) (\w+)/ do |m|
+          token Name, m[1]
+          token Text, m[2]
+        end
+
         # Strings 'something(' are candidates to be treated as function names
         rule %r/(\w[\w\d]*)(\()/ do |m|
           if self.class.function_names.include? m[1]
