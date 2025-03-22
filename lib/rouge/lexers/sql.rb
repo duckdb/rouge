@@ -2113,7 +2113,7 @@ module Rouge
 
         rule %r/(INSTALL|LOAD|UPDATE) (\w+)/ do |m|
           token Keyword, m[1]
-          token Text, ' '
+          token Text, " "
           token Text, m[2]
         end
 
