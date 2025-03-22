@@ -1912,6 +1912,8 @@ module Rouge
           start_ui_server
           stop_ui
           parquet_bloom_probe
+          url_decode
+          url_encode
         ))
       end
 
