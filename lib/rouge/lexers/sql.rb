@@ -916,7 +916,6 @@ module Rouge
           ASSUME_ROLE_ARN
           TBLPROPERTIES
           STRING_DICTIONARY_PAGE_SIZE_LIMIT
-          PARTITIONED_WRITE_MAX_OPEN_FILES
         ))
       end
 
