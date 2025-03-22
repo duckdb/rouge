@@ -2112,7 +2112,8 @@ module Rouge
         rule %r/-?\d[\d_]*([Ee]-?\d[\d_]*)?/, Num::Integer
 
         rule %r/(INSTALL|LOAD|UPDATE) (\w+)/ do |m|
-          token Name, m[1]
+          token Keyword, m[1]
+          token Text, ' '
           token Text, m[2]
         end
 
