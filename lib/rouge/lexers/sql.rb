@@ -2066,6 +2066,11 @@ module Rouge
           bernoulli
           python_enable_replacements
           azure_storage_connection_string
+          azure_http_stats
+          azure_read_transfer_concurrency
+          azure_read_transfer_chunk_size
+          azure_read_buffer_size
+          azure_http_proxy
           enable_logging
           disable_logging
           enabled_loggers
