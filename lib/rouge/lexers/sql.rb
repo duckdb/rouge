@@ -868,7 +868,6 @@ module Rouge
           OPEN_OPTIONS
           OVERWRITE_OR_IGNORE
           PARALLEL
-          PARQUET
           PARQUET_VERSION
           PARTITION_BY
           PER_THREAD_OUTPUT
@@ -937,6 +936,7 @@ module Rouge
           mysql
           mysql_scanner
           newline_delimited
+          parquet
           postgres
           postgres_binary
           postgres_scanner
@@ -962,6 +962,8 @@ module Rouge
           S3_TABLES
           sts
           STS
+          graphviz
+          html
         ))
       end
 
