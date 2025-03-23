@@ -806,6 +806,7 @@ module Rouge
           ACCOUNT_NAME
           ALL_VARCHAR
           ALLOW_QUOTED_NULLS
+          APPEND
           AUTO
           AUTO_DETECT
           AUTO_TYPE_CANDIDATES
@@ -916,6 +917,7 @@ module Rouge
           ASSUME_ROLE_ARN
           TBLPROPERTIES
           STRING_DICTIONARY_PAGE_SIZE_LIMIT
+          KMS_KEY_ID
         ))
       end
 
