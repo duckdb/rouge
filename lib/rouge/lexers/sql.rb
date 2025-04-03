@@ -741,6 +741,7 @@ module Rouge
           INTEGER
           INTEGRAL
           INTERVAL
+          JSON
           LIST
           LOGICAL
           LONG
