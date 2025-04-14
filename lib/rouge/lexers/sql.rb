@@ -918,6 +918,8 @@ module Rouge
           TBLPROPERTIES
           STRING_DICTIONARY_PAGE_SIZE_LIMIT
           KMS_KEY_ID
+          ESCAPE
+          STRICT_MODE
         ))
       end
 
@@ -2088,7 +2090,6 @@ module Rouge
           encoding
           allowed_paths
           allowed_directories
-          strict_mode
           disabled_compression_methods
           force_compression
           asof_loop_join_threshold
