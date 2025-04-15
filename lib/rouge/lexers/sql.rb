@@ -2156,7 +2156,7 @@ module Rouge
           elsif self.class.keywords.include? m[0] or
               self.class.option_values.include? m[0] or
               # option names only count is they are all lowercase or all uppercase
-              ((m[0] = m[0].downcase or m[0] = m[0].upcase) and self.class.option_names.include? m[0].upcase)
+              ((m[0] == m[0].downcase or m[0] == m[0].upcase) and self.class.option_names.include? m[0].upcase)
             token Keyword
           elsif self.class.configuration_options.include? m[0]
             token Name::Property
