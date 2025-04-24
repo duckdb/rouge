@@ -920,6 +920,8 @@ module Rouge
           KMS_KEY_ID
           ESCAPE
           STRICT_MODE
+          RETURN_FILES
+          RETURN_STATS
         ))
       end
 
