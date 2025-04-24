@@ -1933,6 +1933,7 @@ module Rouge
           allow_persistent_secrets
           allow_unredacted_secrets
           allow_unsigned_extensions
+          allow_deprecated_lambda_syntax
           arrow_large_buffer_size
           arrow_output_list_view
           autoinstall_extension_repository
