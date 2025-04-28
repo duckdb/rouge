@@ -1177,6 +1177,7 @@ module Rouge
           duckdb_temporary_files
           duckdb_types
           duckdb_views
+          duckdb_prepared_statements
           edit
           editdist3
           element_at
