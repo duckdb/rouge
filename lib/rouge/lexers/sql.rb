@@ -922,6 +922,7 @@ module Rouge
           STRICT_MODE
           RETURN_FILES
           RETURN_STATS
+          LAMBDA
         ))
       end
 
