@@ -2105,6 +2105,59 @@ module Rouge
         ))
       end
 
+      def self.dot_commands
+        @dot_commands ||= Set.new(%w(
+          bail
+          binary
+          cd
+          changes
+          columns
+          constant
+          constantcode
+          databases
+          echo
+          exit
+          headers
+          help
+          highlight
+          highlight_colors
+          highlight_results
+          import
+          indexes
+          keyword
+          keywordcode
+          large_number_rendering
+          log
+          maxrows
+          maxwidth
+          mode
+          multiline
+          nullvalue
+          once
+          open
+          output
+          print
+          prompt
+          quit
+          read
+          rows
+          safe_mode
+          schema
+          separator
+          shell
+          show
+          singleline
+          system
+          tables
+          timer
+          width
+          constant
+          constantcode
+          keyword
+          keywordcode
+        ))
+      end
+
       state :root do
         rule %r/\s+/m, Text
         rule %r/--.*/, Comment::Single
@@ -2122,6 +2175,17 @@ module Rouge
         # Numbers
         rule %r/-?\d[\d_]*\.\d[\d_]*([Ee]-?\d[\d_]*(\.\d[\d_]*)?)?/, Num::Float
         rule %r/-?\d[\d_]*([Ee]-?\d[\d_]*)?/, Num::Integer
+
+        # dot commands
+        rule %r/([.])(\w+)/ do |m|
+          if self.class.dot_commands.include? m[2]
+            token Name::Property, m[1]
+            token Name::Property, m[2]
+          else
+            token Text, m[1]
+            token Text, m[2]
+          end
+        end
 
         rule %r/(INSTALL|LOAD|UPDATE)(\s+)(\w+)/ do |m|
           token Keyword, m[1]
