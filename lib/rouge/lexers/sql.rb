@@ -1924,6 +1924,7 @@ module Rouge
           parquet_bloom_probe
           url_decode
           url_encode
+          cast_to_type
         ))
       end
 
