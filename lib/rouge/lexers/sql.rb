@@ -2192,7 +2192,7 @@ module Rouge
 
         rule %r/(INSTALL|LOAD|UPDATE)(\s+)(\w+)/ do |m|
           token Keyword, m[1]
-          if m[2] == "EXTENSIONS"
+          if m[3] == "EXTENSIONS"
             token Keyword, m[2]
           else
             token Text, m[2]
