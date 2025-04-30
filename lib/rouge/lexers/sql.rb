@@ -923,6 +923,10 @@ module Rouge
           RETURN_FILES
           RETURN_STATS
           LAMBDA
+          DATA_PATH
+          METADATA_CATALOG
+          METADATA_SCHEMA
+          PARTITIONED
         ))
       end
 
