@@ -974,6 +974,16 @@ module Rouge
           STS
           graphviz
           html
+          rle
+          dictionary
+          pfor
+          bitpacking
+          fsst
+          chimp
+          patas
+          alp
+          alprd
+          roaring
         ))
       end
 
