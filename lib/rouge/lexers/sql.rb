@@ -600,6 +600,7 @@ module Rouge
           TRIM
           TRUNCATE
           TRUSTED
+          TRY
           TRY_CAST
           TYPE
           TYPES
