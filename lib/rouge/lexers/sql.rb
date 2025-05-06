@@ -1940,6 +1940,7 @@ module Rouge
           url_decode
           url_encode
           cast_to_type
+          conditional_add
         ))
       end
 
