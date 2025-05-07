@@ -1941,6 +1941,7 @@ module Rouge
           url_encode
           cast_to_type
           conditional_add
+          rowgroup_counts
         ))
       end
 
