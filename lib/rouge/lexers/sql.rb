@@ -1942,11 +1942,18 @@ module Rouge
           cast_to_type
           conditional_add
           rowgroup_counts
-          fixed_length_varchar_to_ubigint
+          varchar_to_ubigint
           zip_varchar
           morton_encode
           hilbert_encode
-          fixed_length_varchar_to_ubigint
+          st_hilbert
+          sq
+          dq
+          nq
+          dq_list
+          nq_list
+          dq_concat
+          nq_concat
         ))
       end
 
