@@ -1944,6 +1944,9 @@ module Rouge
           rowgroup_counts
           fixed_length_varchar_to_ubigint
           zip_varchar
+          morton_encode
+          hilbert_encode
+          fixed_length_varchar_to_ubigint
         ))
       end
 
@@ -2198,17 +2201,6 @@ module Rouge
         rule %r/-?\d[\d_]*\.\d[\d_]*([Ee]-?\d[\d_]*(\.\d[\d_]*)?)?/, Num::Float
         rule %r/-?\d[\d_]*([Ee]-?\d[\d_]*)?/, Num::Integer
 
-        # dot commands
-        rule %r/([.])(\w+)/ do |m|
-          if self.class.dot_commands.include? m[2]
-            token Name::Property, m[1]
-            token Name::Property, m[2]
-          else
-            token Text, m[1]
-            token Text, m[2]
-          end
-        end
-
         rule %r/(INSTALL|LOAD|UPDATE)(\s+)(\w+)/ do |m|
           token Keyword, m[1]
           if m[3] == "EXTENSIONS"
@@ -2233,6 +2225,19 @@ module Rouge
           else
             token Name, m[1]
             token Punctuation, m[2]
+          end
+        end
+
+        # dot commands:
+        # these must come after function names - with function chaining, functions can start with
+        # a dot (e.g., ('some_string').split(' '))
+        rule %r/([.])(\w+)/ do |m|
+          if self.class.dot_commands.include? m[2]
+            token Name::Property, m[1]
+            token Name::Property, m[2]
+          else
+            token Text, m[1]
+            token Text, m[2]
           end
         end
 
