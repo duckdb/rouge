@@ -2206,9 +2206,9 @@ module Rouge
           if m[3] == "EXTENSIONS"
             token Keyword, m[2]
           else
-            token Text, m[2]
+            token Name, m[2]
           end
-          token Text, m[3]
+          token Name, m[3]
         end
 
         # Strings 'something(' are candidates to be treated as function names
@@ -2236,8 +2236,8 @@ module Rouge
             token Name::Property, m[1]
             token Name::Property, m[2]
           else
-            token Text, m[1]
-            token Text, m[2]
+            token Name, m[1]
+            token Name, m[2]
           end
         end
 
