@@ -2211,20 +2211,23 @@ module Rouge
           token Name, m[3]
         end
 
-        # Strings 'something(' are candidates to be treated as function names
-        rule %r/(\w[\w\d]*)(\()/ do |m|
-          if self.class.function_names.include? m[1]
-            token Name::Function, m[1]
-            token Punctuation, m[2]
-          elsif self.class.keywords_type.include? m[1]
-            token Name::Builtin, m[1]
-            token Punctuation, m[2]
-          elsif self.class.keywords.include? m[1]
-            token Keyword, m[1]
-            token Punctuation, m[2]
-          else
+        # Strings 'something(' and '.something(' are candidates to be treated as function names
+        rule %r/([.]?)(\w[\w\d]*)(\()/ do |m|
+          if not m[1].empty?
             token Name, m[1]
-            token Punctuation, m[2]
+          end
+          if self.class.function_names.include? m[2]
+            token Name::Function, m[2]
+            token Punctuation, m[3]
+          elsif self.class.keywords_type.include? m[2]
+            token Name::Builtin, m[2]
+            token Punctuation, m[3]
+          elsif self.class.keywords.include? m[2]
+            token Keyword, m[2]
+            token Punctuation, m[3]
+          else
+            token Name, m[2]
+            token Punctuation, m[3]
           end
         end
 
