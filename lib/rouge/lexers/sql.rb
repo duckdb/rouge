@@ -1942,6 +1942,8 @@ module Rouge
           cast_to_type
           conditional_add
           rowgroup_counts
+          fixed_length_varchar_to_ubigint
+          zip_varchar
         ))
       end
 
