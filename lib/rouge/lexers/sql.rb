@@ -2134,6 +2134,7 @@ module Rouge
           ui_polling_interval
           late_materialization_max_rows
           hnsw_ef_search
+          lambda_syntax
         ))
       end
 
