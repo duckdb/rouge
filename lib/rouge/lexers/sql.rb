@@ -1954,6 +1954,41 @@ module Rouge
           nq_list
           dq_concat
           nq_concat
+          acosh
+          argmax
+          array_to_string_comma_default
+          asinh
+          atanh
+          can_cast_implicitly
+          countif
+          create_sort_key
+          current_database
+          current_query
+          duckdb_log_contexts
+          duckdb_logs
+          duckdb_secret_types
+          duckdb_table_sample
+          get_block_size
+          grade_up
+          histogram_values
+          in_search_path
+          json_pretty
+          json_serialize_plan
+          julian
+          make_timestamp_ns
+          map_concat
+          map_extract_value
+          normalized_interval
+          sem
+          struct_concat
+          struct_extract_at
+          sum_no_overflow
+          sumkahan
+          timetz_byte_comparable
+          to_base
+          to_quarters
+          unpivot_list
+          write_log
         ))
       end
 
