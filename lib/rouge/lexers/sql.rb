@@ -1962,6 +1962,7 @@ module Rouge
           can_cast_implicitly
           countif
           create_sort_key
+          decode_sort_key
           current_database
           current_query
           duckdb_log_contexts
