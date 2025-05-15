@@ -933,6 +933,7 @@ module Rouge
 
       def self.option_values
         @option_values ||= Set.new(%w(
+          arrows
           azure
           brotli
           csv
