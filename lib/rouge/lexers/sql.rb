@@ -1869,6 +1869,10 @@ module Rouge
           user
           user_agent
           uuid
+          uuidv4
+          uuidv7
+          uuid_extract_timestamp
+          uuid_extract_version
           var_pop
           var_samp
           variance
