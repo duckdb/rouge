@@ -2172,6 +2172,7 @@ module Rouge
           late_materialization_max_rows
           hnsw_ef_search
           lambda_syntax
+          enable_external_file_cache
         ))
       end
 
@@ -2248,12 +2249,12 @@ module Rouge
 
         rule %r/(INSTALL|LOAD|UPDATE)(\s+)(\w+)/ do |m|
           token Keyword, m[1]
+          token Name, m[2]
           if m[3] == "EXTENSIONS"
-            token Keyword, m[2]
+            token Keyword, m[3]
           else
-            token Name, m[2]
+            token Name, m[3]
           end
-          token Name, m[3]
         end
 
         # Strings 'something(' and '.something(' are candidates to be treated as function names
