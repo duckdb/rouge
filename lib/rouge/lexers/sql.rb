@@ -823,6 +823,7 @@ module Rouge
           COLUMN_NAMES
           COLUMN_TYPES
           COLUMNS
+          UNPACK
           COMPRESSION
           COMPRESSION_LEVEL
           CONFIG
