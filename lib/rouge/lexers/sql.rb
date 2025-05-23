@@ -1343,6 +1343,8 @@ module Rouge
           json_transform_strict
           json_type
           json_valid
+          json_each
+          json_tree
           julian
           kahan_sum
           kurtosis
