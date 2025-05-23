@@ -1553,6 +1553,7 @@ module Rouge
           range
           rank
           rank_dense
+          read_arrow
           read_csv
           read_csv_auto
           read_json
