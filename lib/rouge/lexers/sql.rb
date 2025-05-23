@@ -929,6 +929,7 @@ module Rouge
           METADATA_CATALOG
           METADATA_SCHEMA
           PARTITIONED
+          BATCH_SIZE
         ))
       end
 
