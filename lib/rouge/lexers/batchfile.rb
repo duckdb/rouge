@@ -6,6 +6,7 @@ module Rouge
     class Batchfile < RegexLexer
       title "Batch"
       desc "Various shell languages, including sh and bash (multiline)"
+
       tag 'batch'
 
       def self.detect?(text)
@@ -39,7 +40,7 @@ module Rouge
         winget conda mamba make ninja cmake git g\+\+ ninja-build
         libssl-dev openssl-devel wget curl aws tree uplot jq tldr pcregrep
         isql clone hexdump iconv pacman gzcat flutter zstd unzstd zstdmt
-        pkg clang sh ksh fish bash zsh marimo psql sqlite sqlite3
+        pkg clang sh ksh fish bash zsh marimo psql sqlite sqlite3 uv
       ).join('|')
 
       state :basic do
