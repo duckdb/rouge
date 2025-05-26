@@ -701,6 +701,8 @@ module Rouge
           COMPOSITE
           NULLS_FIRST
           NULLS_LAST
+          SNAPSHOT_VERSION
+          SNAPSHOT_TIME
       ))
       end
 
