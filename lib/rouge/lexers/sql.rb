@@ -2001,6 +2001,14 @@ module Rouge
           to_quarters
           unpivot_list
           write_log
+          ducklake_cleanup_old_files
+          ducklake_expire_snapshots
+          ducklake_merge_adjacent_files
+          ducklake_snapshots
+          ducklake_table_changes
+          ducklake_table_deletions
+          ducklake_table_info
+          ducklake_table_insertions
         ))
       end
 
