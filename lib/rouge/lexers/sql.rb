@@ -2011,6 +2011,7 @@ module Rouge
           ducklake_table_deletions
           ducklake_table_info
           ducklake_table_insertions
+          snapshots
         ))
       end
 
