@@ -2194,6 +2194,8 @@ module Rouge
           hnsw_ef_search
           lambda_syntax
           enable_external_file_cache
+          range
+          sheet
         ))
       end
 
