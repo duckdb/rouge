@@ -2013,6 +2013,7 @@ module Rouge
           ducklake_table_insertions
           snapshots
           merge_adjacent_files
+          fill
         ))
       end
 
