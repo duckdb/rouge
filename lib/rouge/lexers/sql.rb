@@ -1255,6 +1255,7 @@ module Rouge
           from_substrait_json
           fsum
           fts_main_documents
+          fibo
           function_name
           functions
           fuzz_all_functions
