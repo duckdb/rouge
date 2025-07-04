@@ -941,6 +941,7 @@ module Rouge
           azure
           brotli
           csv
+          ducklake
           json
           gcs
           GCS
@@ -2031,6 +2032,7 @@ module Rouge
           to_quarters
           unpivot_list
           write_log
+          ducklake_add_data_files
           ducklake_cleanup_old_files
           ducklake_expire_snapshots
           ducklake_merge_adjacent_files
