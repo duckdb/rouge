@@ -928,6 +928,7 @@ module Rouge
           RETURN_STATS
           LAMBDA
           DATA_PATH
+          METADATA_PATH
           METADATA_CATALOG
           METADATA_SCHEMA
           PARTITIONED
@@ -2033,6 +2034,7 @@ module Rouge
           unpivot_list
           write_log
           ducklake_add_data_files
+          ducklake_list_files
           ducklake_cleanup_old_files
           ducklake_expire_snapshots
           ducklake_merge_adjacent_files
@@ -2041,6 +2043,7 @@ module Rouge
           ducklake_table_deletions
           ducklake_table_info
           ducklake_table_insertions
+          options
           snapshots
           merge_adjacent_files
           fill
