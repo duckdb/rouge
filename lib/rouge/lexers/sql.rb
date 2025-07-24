@@ -2043,7 +2043,9 @@ module Rouge
           ducklake_table_deletions
           ducklake_table_info
           ducklake_table_insertions
+          ducklake_flush_inlined_data
           options
+          set_option
           snapshots
           merge_adjacent_files
           fill
