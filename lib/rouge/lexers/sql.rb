@@ -928,6 +928,7 @@ module Rouge
           RETURN_STATS
           LAMBDA
           DATA_PATH
+          METADATA_PATH
           METADATA_CATALOG
           METADATA_SCHEMA
           PARTITIONED
@@ -941,6 +942,7 @@ module Rouge
           azure
           brotli
           csv
+          ducklake
           json
           gcs
           GCS
@@ -1643,7 +1645,10 @@ module Rouge
           ST_Area_Spheroid
           st_asgeojson
           ST_AsGeoJSON
+          st_ashexewkb
+          ST_AsHexEWKB
           st_ashexwkb
+          ST_AsHexWKB
           st_astext
           ST_AsText
           st_aswkb
@@ -1681,15 +1686,19 @@ module Rouge
           st_distance_spheroid
           ST_Distance_Spheroid
           st_drivers
+          ST_Drivers
           st_dump
+          ST_Dump
           st_dwithin
           ST_DWithin
           st_dwithin_spheroid
           ST_DWithin_Spheroid
           st_endpoint
+          ST_EndPoint
           st_envelope
           ST_Envelope
           st_envelope_agg
+          ST_Envelope_Agg
           st_equals
           ST_Equals
           st_extent
@@ -1703,7 +1712,9 @@ module Rouge
           st_geomfromgeojson
           ST_GeomFromGeoJSON
           st_geomfromhexewkb
+          ST_GeomFromHexEWKB
           st_geomfromhexwkb
+          ST_GeomFromHexWKB
           st_geomfromtext
           ST_GeomFromText
           st_geomfromwkb
@@ -1711,9 +1722,11 @@ module Rouge
           st_intersection
           ST_Intersection
           st_intersection_agg
+          ST_Intersection_Agg
           st_intersects
           ST_Intersects
           st_intersects_extent
+          ST_Intersects_Extent
           st_isclosed
           ST_IsClosed
           st_isempty
@@ -1729,21 +1742,29 @@ module Rouge
           st_length_spheroid
           ST_Length_Spheroid
           st_linemerge
+          ST_LineMerge
           st_linestring2dfromwkb
-          st_list_proj_crs
+          ST_LineString2DFromWKB
           st_makeenvelope
           ST_MakeEnvelope
           st_makeline
           ST_MakeLine
           st_makepolygon
+          ST_MakePolygon
           st_ngeometries
+          ST_NGeometries
           st_ninteriorrings
+          ST_NInteriorRings
           st_normalize
           ST_Normalize
           st_npoints
+          ST_NPoints
           st_numgeometries
+          ST_NumGeometries
           st_numinteriorrings
+          ST_NumInteriorRings
           st_numpoints
+          ST_NumPoints
           st_overlaps
           ST_Overlaps
           st_perimeter
@@ -1753,14 +1774,19 @@ module Rouge
           st_point
           ST_Point
           st_point2d
+          ST_Point2D
           st_point2dfromwkb
+          ST_Point2DFromWKB
           st_point3d
+          ST_Point3D
           st_point4d
+          ST_Point4D
           st_pointn
           ST_PointN
           st_pointonsurface
           ST_PointOnSurface
           st_polygon2dfromwkb
+          ST_Polygon2DFromWKB
           st_read
           ST_Read
           st_readosm
@@ -1770,11 +1796,13 @@ module Rouge
           st_removerepeatedpoints
           ST_RemoveRepeatedPoints
           st_reverse
+          ST_Reverse
           st_simplify
           ST_Simplify
           st_simplifypreservetopology
           ST_SimplifyPreserveTopology
           st_startpoint
+          ST_StartPoint
           st_touches
           ST_Touches
           st_transform
@@ -1782,6 +1810,7 @@ module Rouge
           st_union
           ST_Union
           st_union_agg
+          ST_Union_Agg
           st_within
           ST_Within
           st_x
@@ -2005,6 +2034,8 @@ module Rouge
           to_quarters
           unpivot_list
           write_log
+          ducklake_add_data_files
+          ducklake_list_files
           ducklake_cleanup_old_files
           ducklake_expire_snapshots
           ducklake_merge_adjacent_files
@@ -2013,6 +2044,9 @@ module Rouge
           ducklake_table_deletions
           ducklake_table_info
           ducklake_table_insertions
+          ducklake_flush_inlined_data
+          options
+          set_option
           snapshots
           merge_adjacent_files
           fill
