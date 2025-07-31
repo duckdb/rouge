@@ -1199,6 +1199,7 @@ module Rouge
           duckdb_views
           duckdb_prepared_statements
           duckdb_external_file_cache
+          duckdb_logs_parsed
           edit
           editdist3
           element_at
