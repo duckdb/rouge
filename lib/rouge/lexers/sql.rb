@@ -2050,6 +2050,7 @@ module Rouge
           snapshots
           merge_adjacent_files
           fill
+          add_and_multiply
         ))
       end
 
