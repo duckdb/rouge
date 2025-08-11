@@ -2053,6 +2053,9 @@ module Rouge
           add_and_multiply
           scaling_params
           columns
+          standard_scaler
+          min_max_scaler
+          robust_scaler
         ))
       end
 
