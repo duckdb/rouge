@@ -2052,6 +2052,7 @@ module Rouge
           fill
           add_and_multiply
           scaling_params
+          columns
         ))
       end
 
