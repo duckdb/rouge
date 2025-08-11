@@ -2051,6 +2051,7 @@ module Rouge
           merge_adjacent_files
           fill
           add_and_multiply
+          scaling_params
         ))
       end
 
