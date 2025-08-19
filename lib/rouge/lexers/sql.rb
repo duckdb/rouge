@@ -692,7 +692,6 @@ module Rouge
           RELATIONSHIP
           SHORTEST
           SIMPLE
-          SOURCE
           TRAIL
           VERTEX
           WALK
@@ -703,6 +702,8 @@ module Rouge
           NULLS_LAST
           SNAPSHOT_VERSION
           SNAPSHOT_TIME
+          MERGE
+          MATCHED
       ))
       end
 
