@@ -2057,6 +2057,7 @@ module Rouge
           standard_scaler
           min_max_scaler
           robust_scaler
+          set_commit_message
         ))
       end
 
