@@ -704,6 +704,7 @@ module Rouge
           SNAPSHOT_TIME
           MERGE
           MATCHED
+          BIGNUM
       ))
       end
 
