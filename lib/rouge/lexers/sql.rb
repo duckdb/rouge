@@ -935,6 +935,7 @@ module Rouge
           METADATA_SCHEMA
           PARTITIONED
           BATCH_SIZE
+          ENCRYPTION_CIPHER
         ))
       end
 
