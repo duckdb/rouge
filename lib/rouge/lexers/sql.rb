@@ -705,6 +705,7 @@ module Rouge
           MERGE
           MATCHED
           BIGNUM
+          METADATA_PARAMETERS
       ))
       end
 
