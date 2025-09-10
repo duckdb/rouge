@@ -2245,6 +2245,7 @@ module Rouge
           enable_external_file_cache
           range
           sheet
+          table_name
         ))
       end
 
