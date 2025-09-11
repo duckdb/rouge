@@ -2059,6 +2059,8 @@ module Rouge
           min_max_scaler
           robust_scaler
           set_commit_message
+          order_letters
+          find_weak_anagram
         ))
       end
 
