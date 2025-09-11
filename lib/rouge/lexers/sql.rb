@@ -2255,6 +2255,16 @@ module Rouge
           ducklake_max_retry_count
           ducklake_retry_wait_ms
           ducklake_retry_backoff
+          allow_missing
+          cleanup_all
+          dry_run
+          extra_info
+          ignore_extra_columns
+          older_than
+          schema_name
+          snapshot_time
+          snapshot_version
+          versions
         ))
       end
 
