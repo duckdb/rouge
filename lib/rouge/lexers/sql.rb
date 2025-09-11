@@ -705,6 +705,7 @@ module Rouge
           MERGE
           MATCHED
           BIGNUM
+          METADATA_PARAMETERS
       ))
       end
 
@@ -931,10 +932,12 @@ module Rouge
           LAMBDA
           DATA_PATH
           METADATA_PATH
+          OVERRIDE_DATA_PATH
           METADATA_CATALOG
           METADATA_SCHEMA
           PARTITIONED
           BATCH_SIZE
+          ENCRYPTION_CIPHER
         ))
       end
 
@@ -2047,6 +2050,9 @@ module Rouge
           ducklake_table_info
           ducklake_table_insertions
           ducklake_flush_inlined_data
+          ducklake_rewrite_data_files
+          ducklake_delete_orphaned_files
+          ducklake_checkpoint
           options
           set_option
           snapshots
@@ -2245,6 +2251,7 @@ module Rouge
           enable_external_file_cache
           range
           sheet
+          table_name
         ))
       end
 
