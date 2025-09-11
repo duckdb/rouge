@@ -2252,6 +2252,9 @@ module Rouge
           range
           sheet
           table_name
+          ducklake_max_retry_count
+          ducklake_retry_wait_ms
+          ducklake_retry_backoff
         ))
       end
 
