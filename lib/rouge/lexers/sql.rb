@@ -937,6 +937,7 @@ module Rouge
           PARTITIONED
           BATCH_SIZE
           ENCRYPTION_CIPHER
+          COMPRESS
         ))
       end
 
