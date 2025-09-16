@@ -939,6 +939,7 @@ module Rouge
           BATCH_SIZE
           ENCRYPTION_CIPHER
           COMPRESS
+          ENCRYPTION_KEY
         ))
       end
 
