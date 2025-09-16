@@ -940,6 +940,7 @@ module Rouge
           ENCRYPTION_CIPHER
           COMPRESS
           ENCRYPTION_KEY
+          USE_SSL
         ))
       end
 
