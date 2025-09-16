@@ -932,6 +932,7 @@ module Rouge
           LAMBDA
           DATA_PATH
           METADATA_PATH
+          OVERRIDE_DATA_PATH
           METADATA_CATALOG
           METADATA_SCHEMA
           PARTITIONED
@@ -2050,6 +2051,9 @@ module Rouge
           ducklake_table_info
           ducklake_table_insertions
           ducklake_flush_inlined_data
+          ducklake_rewrite_data_files
+          ducklake_delete_orphaned_files
+          ducklake_checkpoint
           options
           set_option
           snapshots
@@ -2062,6 +2066,8 @@ module Rouge
           min_max_scaler
           robust_scaler
           set_commit_message
+          order_letters
+          find_weak_anagram
         ))
       end
 
@@ -2246,6 +2252,20 @@ module Rouge
           enable_external_file_cache
           range
           sheet
+          table_name
+          ducklake_max_retry_count
+          ducklake_retry_wait_ms
+          ducklake_retry_backoff
+          allow_missing
+          cleanup_all
+          dry_run
+          extra_info
+          ignore_extra_columns
+          older_than
+          schema_name
+          snapshot_time
+          snapshot_version
+          versions
         ))
       end
 
