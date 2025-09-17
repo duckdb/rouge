@@ -2056,6 +2056,8 @@ module Rouge
           ducklake_rewrite_data_files
           ducklake_delete_orphaned_files
           ducklake_checkpoint
+          iceberg_to_ducklake
+          ducklake_to_iceberg
           options
           set_option
           snapshots
