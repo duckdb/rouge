@@ -941,6 +941,8 @@ module Rouge
           COMPRESS
           ENCRYPTION_KEY
           USE_SSL
+          OAUTH2_SCOPE
+          OAUTH2_SERVER_URI
         ))
       end
 
