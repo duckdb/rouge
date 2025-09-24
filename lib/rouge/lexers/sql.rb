@@ -706,6 +706,7 @@ module Rouge
           MATCHED
           BIGNUM
           METADATA_PARAMETERS
+          DATA_INLINING_ROW_LIMIT
       ))
       end
 
