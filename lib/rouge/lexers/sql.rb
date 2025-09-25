@@ -2082,22 +2082,41 @@ module Rouge
         @configuration_options ||= Set.new(%w(
           access_mode
           allocator_background_threads
+          allocator_bulk_deallocation_flush_threshold
           allocator_flush_threshold
           allow_community_extensions
+          allow_deprecated_lambda_syntax
           allow_extensions_metadata_mismatch
+          allow_missing
+          allow_moved_paths
           allow_persistent_secrets
           allow_unredacted_secrets
           allow_unsigned_extensions
-          allow_deprecated_lambda_syntax
+          allowed_directories
+          allowed_paths
           arrow_large_buffer_size
+          arrow_lossless_conversion
           arrow_output_list_view
+          arrow_output_version
+          asof_loop_join_threshold
+          auto_fallback_to_full_download
           autoinstall_extension_repository
           autoinstall_known_extensions
           autoload_known_extensions
+          azure_http_proxy
+          azure_http_stats
+          azure_read_buffer_size
+          azure_read_transfer_chunk_size
+          azure_read_transfer_concurrency
+          azure_storage_connection_string
+          bernoulli
+          bin_count
           binary_as_string
           ca_cert_file
           Calendar
+          catalog_error_max_schemas
           checkpoint_threshold
+          cleanup_all
           collations
           custom_extension_repository
           custom_profiling_settings
@@ -2109,23 +2128,39 @@ module Rouge
           default_order
           default_secret_storage
           disable_checkpoint_on_shutdown
+          disable_database_invalidation
+          disable_logging
           disable_object_cache
           disable_optimizer
+          disable_parquet_prefetching
           disable_print_progress_bar
           disable_profile
           disable_profiling
           disable_progress_bar
+          disable_timestamptz_casts
           disable_verification
           disable_verify_external
           disable_verify_parallelism
           disable_verify_serializer
+          disabled_compression_methods
           disabled_filesystems
+          disabled_log_types
+          disabled_loggers
+          dry_run
           duckdb_api
+          ducklake_max_retry_count
+          ducklake_retry_backoff
+          ducklake_retry_wait_ms
+          dynamic_or_filter_threshold
           enable_checkpoint_on_shutdown
+          enable_curl_server_cert_verification
           enable_external_access
+          enable_external_file_cache
           enable_fsst_vectors
+          enable_geoparquet_conversion
           enable_http_logging
           enable_http_metadata_cache
+          enable_logging
           enable_macro_dependencies
           enable_object_cache
           enable_optimizer
@@ -2137,54 +2172,85 @@ module Rouge
           enable_server_cert_verification
           enable_verification
           enable_view_dependencies
+          enabled_log_types
+          enabled_loggers
+          encoding
           errors_as_json
+          experimental_metadata_reuse
           explain_output
           extension_directory
           external_threads
+          extra_info
           file_search_path
           force_checkpoint
+          force_compression
           force_download
           functions
+          hnsw_ef_search
           home_directory
           http_keep_alive
           http_logging_output
+          http_proxy
+          http_proxy_password
+          http_proxy_username
           http_retries
           http_retry_backoff
           http_retry_wait_ms
           http_timeout
+          httpfs_client_implementation
           ieee_floating_point_ops
+          ignore_extra_columns
           immediate_transaction_mode
           index_scan_max_count
           index_scan_percentage
           integer_division
+          lambda_syntax
+          late_materialization_max_rows
           lock_configuration
           log_query_path
+          logging_level
+          logging_mode
+          logging_storage
           max_expression_depth
           max_memory
           max_temp_directory_size
+          max_vacuum_tasks
           memory_limit
+          merge_join_threshold
+          metadata_compression_codec
           metadata_info
+          nested_loop_join_threshold
           null_order
           old_implicit_casting
+          older_than
           order_by_non_integer_literal
           ordered_aggregate_threshold
+          parquet_metadata_cache
           partitioned_write_flush_threshold
+          partitioned_write_max_open_files
           password
           perfect_ht_threshold
+          pin_threads
           pivot_filter_threshold
           pivot_limit
           platform
           prefer_range_joins
+          prefetch_all_parquet_files
           preserve_identifier_case
           preserve_insertion_order
           produce_arrow_string_view
           profile_output
+          profiling_coverage
           profiling_mode
           profiling_output
           progress_bar_time
+          python_enable_replacements
+          range
           s3_access_key_id
           s3_endpoint
+          s3_kms_key_id
           s3_region
+          s3_requester_pays
           s3_secret_access_key
           s3_session_token
           s3_uploader_max_filesize
@@ -2193,86 +2259,44 @@ module Rouge
           s3_url_compatibility_mode
           s3_url_style
           s3_use_ssl
+          scalar_subquery_error_on_multiple_rows
+          scheduler_process_partial
           schema
+          schema_name
           search_path
           secret_directory
+          sheet
           show_databases
           show_tables
           show_tables_expanded
+          snapshot_time
+          snapshot_version
           storage_compatibility_version
           streaming_buffer_size
+          string_dictionary_page_size_limit
+          table_name
           temp_directory
+          temp_file_encryption
           threads
           TimeZone
+          ui_local_port
+          ui_polling_interval
+          ui_remote_url
+          unsafe_disable_etag_checks
+          unsafe_enable_version_guessing
           user
           user_agent
           username
+          variant_legacy_encoding
           verify_external
           verify_parallelism
           verify_serializer
           version
+          version_name_format
+          versions
           wal_autocheckpoint
           worker_threads
-          scalar_subquery_error_on_multiple_rows
-          bin_count
-          allocator_bulk_deallocation_flush_threshold
-          arrow_lossless_conversion
-          catalog_error_max_schemas
-          http_proxy_password
-          http_proxy_username
-          http_proxy
-          max_vacuum_tasks
-          merge_join_threshold
-          nested_loop_join_threshold
-          partitioned_write_max_open_files
-          unsafe_enable_version_guessing
-          version_name_format
-          metadata_compression_codec
-          allow_moved_paths
-          bernoulli
-          python_enable_replacements
-          azure_storage_connection_string
-          azure_http_stats
-          azure_read_transfer_concurrency
-          azure_read_transfer_chunk_size
-          azure_read_buffer_size
-          azure_http_proxy
-          enable_logging
-          disable_logging
-          enabled_loggers
-          disabled_loggers
-          logging_level
-          logging_mode
-          encoding
-          allowed_paths
-          allowed_directories
-          disabled_compression_methods
-          force_compression
-          asof_loop_join_threshold
-          string_dictionary_page_size_limit
-          ui_local_port
-          ui_remote_url
-          ui_polling_interval
-          late_materialization_max_rows
-          hnsw_ef_search
-          lambda_syntax
-          enable_external_file_cache
-          range
-          sheet
-          table_name
-          ducklake_max_retry_count
-          ducklake_retry_wait_ms
-          ducklake_retry_backoff
-          allow_missing
-          cleanup_all
-          dry_run
-          extra_info
-          ignore_extra_columns
-          older_than
-          schema_name
-          snapshot_time
-          snapshot_version
-          versions
+          zstd_min_string_length
         ))
       end
 
