@@ -1991,6 +1991,7 @@ module Rouge
           start_ui
           start_ui_server
           stop_ui
+          stop_ui_server
           parquet_bloom_probe
           url_decode
           url_encode
