@@ -815,11 +815,14 @@ module Rouge
           ALL_VARCHAR
           ALLOW_QUOTED_NULLS
           APPEND
+          ASSUME_ROLE_ARN
           AUTO
           AUTO_DETECT
           AUTO_TYPE_CANDIDATES
+          BATCH_SIZE
           BEARER_TOKEN
           BLOCK_SIZE
+          BLOOM_FILTER_FALSE_POSITIVE_RATIO
           BYTE_STREAM_SPLIT
           CHILDREN
           CLIENT_CERTIFICATE_PATH
@@ -829,27 +832,37 @@ module Rouge
           COLUMN_NAMES
           COLUMN_TYPES
           COLUMNS
-          UNPACK
+          COMPRESS
           COMPRESSION
           COMPRESSION_LEVEL
           CONFIG
           CONNECTION_STRING
+          CREATE_IF_NOT_EXISTS
           CREDENTIAL_CHAIN
+          DATA_INLINING_ROW_LIMIT
+          DATA_PATH
           DATEFORMAT
           DECIMAL_SEPARATOR
           DELIM
           DELIMITER
           DELTA_BINARY_PACKED
           DELTA_LENGTH_BYTE_ARRAY
+          DICTIONARY_SIZE_LIMIT
           DRIVER
           EMPTY_AS_VARCHAR
+          ENCRYPTED
+          ENCRYPTION_CIPHER
           ENCRYPTION_CONFIG
+          ENCRYPTION_KEY
           ENDPOINT
           ENDPOINT_TYPE
+          ESCAPE
           EXTRA_HTTP_HEADERS
           FIELD_IDS
+          FILE_EXTENSION
           FILENAME
           FILENAME_PATTERN
+          FILEPATH
           FORCE_NOT_NULL
           FORMAT
           HEADER
@@ -857,33 +870,49 @@ module Rouge
           HIVE_TYPES
           HTTP
           HTTP_PROXY
-          HTTP_PROXY
           HTTP_PROXY_PASSWORD
           HTTP_PROXY_USERNAME
           HUGGINGFACE
           IGNORE_ERRORS
           KEY_ID
+          KMS_KEY_ID
           KV_METADATA
+          LAMBDA
           LAYER
           LAYER_CREATION_OPTIONS
           MAX_LINE_SIZE
           MAX_NODE_CAPACITY
+          META_⟨PARAMETER_NAME⟩
+          METADATA_CATALOG
+          METADATA_PARAMETERS
+          METADATA_PATH
+          METADATA_SCHEMA
+          MIGRATE_IF_REQUIRED
           MIN_NODE_CAPACITY
           NAMES
           NEW_LINE
           NORMALIZE_NAMES
           NULL_PADDING
           NULLSTR
+          OAUTH2_SCOPE
+          OAUTH2_SERVER_URI
           OPEN_OPTIONS
+          OVERRIDE_DATA_PATH
           OVERWRITE_OR_IGNORE
+          OVERWRITE_RANGE
+          OVERWRITE_SHEET
           PARALLEL
           PARQUET_VERSION
           PARTITION_BY
+          PARTITIONED
           PER_THREAD_OUTPUT
           PERSISTENT
+          PIN_SNAPSHOT
           PROVIDER
           PROXY_PASSWORD
           PROXY_USER_NAME
+          PUSHDOWN_FILTERS
+          PUSHDOWN_PARTITION_INFO
           QUOTE
           READ_ONLY
           READONLY
@@ -893,8 +922,10 @@ module Rouge
           REGION
           REJECTS_LIMIT
           REJECTS_RECOVERY_COLUMNS
-          REJECTS_TABLE
           REJECTS_SCAN
+          REJECTS_TABLE
+          RETURN_FILES
+          RETURN_STATS
           ROW_GROUP_SIZE
           SAMPLE_SIZE
           SEP
@@ -902,48 +933,24 @@ module Rouge
           SET_REGION
           SF
           SKIP
+          SNAPSHOT_TIME
+          SNAPSHOT_VERSION
           SRS
           STEP
           STOP_AT_EMPTY
           STORE_REJECTS
+          STRICT_MODE
+          STRING_DICTIONARY_PAGE_SIZE_LIMIT
+          TBLPROPERTIES
           TENANT_ID
           TIMESTAMPFORMAT
           TOKEN
           TYPES
           UNION_BY_NAME
-          USE_TMP_FILE
+          UNPACK
           URL_STYLE
-          FILEPATH
-          OVERWRITE_SHEET
-          OVERWRITE_RANGE
-          DICTIONARY_SIZE_LIMIT
-          BLOOM_FILTER_FALSE_POSITIVE_RATIO
-          PIN_SNAPSHOT
-          PUSHDOWN_PARTITION_INFO
-          PUSHDOWN_FILTERS
-          FILE_EXTENSION
-          ASSUME_ROLE_ARN
-          TBLPROPERTIES
-          STRING_DICTIONARY_PAGE_SIZE_LIMIT
-          KMS_KEY_ID
-          ESCAPE
-          STRICT_MODE
-          RETURN_FILES
-          RETURN_STATS
-          LAMBDA
-          DATA_PATH
-          METADATA_PATH
-          OVERRIDE_DATA_PATH
-          METADATA_CATALOG
-          METADATA_SCHEMA
-          PARTITIONED
-          BATCH_SIZE
-          ENCRYPTION_CIPHER
-          COMPRESS
-          ENCRYPTION_KEY
           USE_SSL
-          OAUTH2_SCOPE
-          OAUTH2_SERVER_URI
+          USE_TMP_FILE
         ))
       end
 
