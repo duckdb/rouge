@@ -2069,6 +2069,7 @@ module Rouge
           ducklake_checkpoint
           iceberg_to_ducklake
           ducklake_to_iceberg
+          ducklake_last_committed_snapshot
           options
           set_option
           snapshots
