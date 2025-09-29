@@ -2306,6 +2306,7 @@ module Rouge
           wal_autocheckpoint
           worker_threads
           zstd_min_string_length
+          delete_threshold
         ))
       end
 
