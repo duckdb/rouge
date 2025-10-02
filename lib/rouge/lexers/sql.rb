@@ -2053,6 +2053,7 @@ module Rouge
           to_quarters
           unpivot_list
           write_log
+          iceberg_to_ducklake
           ducklake_add_data_files
           ducklake_list_files
           ducklake_cleanup_old_files
@@ -2067,9 +2068,28 @@ module Rouge
           ducklake_rewrite_data_files
           ducklake_delete_orphaned_files
           ducklake_checkpoint
-          iceberg_to_ducklake
           ducklake_to_iceberg
           ducklake_last_committed_snapshot
+          ducklake_current_snapshot
+          ducklake_remove_data_file
+          add_data_files
+          list_files
+          cleanup_old_files
+          expire_snapshots
+          merge_adjacent_files
+          snapshots
+          table_changes
+          table_deletions
+          table_info
+          table_insertions
+          flush_inlined_data
+          rewrite_data_files
+          delete_orphaned_files
+          checkpoint
+          to_iceberg
+          last_committed_snapshot
+          current_snapshot
+          remove_data_file
           options
           set_option
           snapshots
