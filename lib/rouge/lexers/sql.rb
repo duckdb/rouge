@@ -952,6 +952,7 @@ module Rouge
           URL_STYLE
           USE_SSL
           USE_TMP_FILE
+          VALIDATION
         ))
       end
 
