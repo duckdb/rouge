@@ -953,6 +953,7 @@ module Rouge
           USE_SSL
           USE_TMP_FILE
           VALIDATION
+          ACCESS_DELEGATION_MODE
         ))
       end
 
