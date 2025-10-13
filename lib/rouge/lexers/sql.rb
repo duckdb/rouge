@@ -2106,6 +2106,7 @@ module Rouge
           set_commit_message
           order_letters
           find_weak_anagram
+          is_maximal
         ))
       end
 
