@@ -1013,6 +1013,7 @@ module Rouge
           alp
           alprd
           roaring
+          vortex
         ))
       end
 
@@ -2108,6 +2109,7 @@ module Rouge
           order_letters
           find_weak_anagram
           is_maximal
+          read_vortex
         ))
       end
 
