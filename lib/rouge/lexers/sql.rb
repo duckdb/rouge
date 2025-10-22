@@ -2333,6 +2333,7 @@ module Rouge
           worker_threads
           zstd_min_string_length
           delete_threshold
+          python_scan_all_frames
         ))
       end
 
