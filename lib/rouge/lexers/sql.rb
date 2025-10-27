@@ -2110,6 +2110,7 @@ module Rouge
           find_weak_anagram
           is_maximal
           read_vortex
+          enable_logging
         ))
       end
 
