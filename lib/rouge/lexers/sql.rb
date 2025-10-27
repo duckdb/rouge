@@ -954,6 +954,10 @@ module Rouge
           USE_TMP_FILE
           VALIDATION
           ACCESS_DELEGATION_MODE
+          STORAGE
+          STORAGE_CONFIG
+          STORAGE_BUFFER_SIZE
+          STORAGE_PATH
         ))
       end
 
