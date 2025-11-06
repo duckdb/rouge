@@ -958,6 +958,7 @@ module Rouge
           STORAGE_CONFIG
           STORAGE_BUFFER_SIZE
           STORAGE_PATH
+          ALL_FLAT
         ))
       end
 
