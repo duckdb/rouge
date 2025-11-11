@@ -2116,6 +2116,8 @@ module Rouge
           is_maximal
           read_vortex
           enable_logging
+          duckdb_proj_compiled_version
+          duckdb_proj_version
         ))
       end
 
