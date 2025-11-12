@@ -2413,7 +2413,7 @@ module Rouge
           token Generic::Emph, m[1]
         end
         # Text between guillemets denotes a prompt
-        rule %r/«([^⟩]+)»/ do |m|
+        rule %r/«([^»]+)»/ do |m|
           token Generic::Prompt, m[1]
         end
         # Numbers
