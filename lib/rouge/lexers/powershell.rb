@@ -39,6 +39,7 @@ module Rouge
         configuration hidden trap continue if try data in type define
         inlinescript until do interface using dynamicparam module var else
         namespace while elseif parallel workflow end param enum private
+        iex Set-ExecutionPolicy New-Object
       ).join('|')
 
       # https://devblogs.microsoft.com/scripting/powertip-find-a-list-of-powershell-type-accelerators/
@@ -60,7 +61,6 @@ module Rouge
         wmisearcher mailaddress scriptblock psvariable type psmoduleinfo
         powershell runspacefactory runspace initialsessionstate psscriptmethod
         psscriptproperty psnoteproperty psaliasproperty psvariableproperty
-        iex Set-ExecutionPolicy New-Object
       ).join('|')
 
       OPERATORS = %w(
