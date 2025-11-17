@@ -60,6 +60,7 @@ module Rouge
         wmisearcher mailaddress scriptblock psvariable type psmoduleinfo
         powershell runspacefactory runspace initialsessionstate psscriptmethod
         psscriptproperty psnoteproperty psaliasproperty psvariableproperty
+        iex Set-ExecutionPolicy New-Object
       ).join('|')
 
       OPERATORS = %w(
