@@ -2395,6 +2395,7 @@ module Rouge
           constantcode
           keyword
           keywordcode
+          progress_bar
         ))
       end
 
