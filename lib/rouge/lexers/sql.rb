@@ -959,6 +959,7 @@ module Rouge
           STORAGE_BUFFER_SIZE
           STORAGE_PATH
           ALL_FLAT
+          CATALOG
         ))
       end
 
@@ -2342,7 +2343,6 @@ module Rouge
           zstd_min_string_length
           delete_threshold
           python_scan_all_frames
-          catalog
         ))
       end
 
