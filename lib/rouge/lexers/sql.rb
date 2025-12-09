@@ -857,6 +857,7 @@ module Rouge
           ENCRYPTION_KEY
           ENDPOINT
           ENDPOINT_TYPE
+          ENDPOINT_URL
           ESCAPE
           EXTRA_HTTP_HEADERS
           FIELD_IDS
