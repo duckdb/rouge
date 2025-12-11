@@ -1330,6 +1330,9 @@ module Rouge
           iceberg_metadata
           iceberg_scan
           iceberg_snapshots
+          iceberg_table_properties
+          set_iceberg_table_properties
+          remove_iceberg_table_properties
           icu_calendar_names
           icu_sort_key
           ieee754
