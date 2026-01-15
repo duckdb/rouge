@@ -961,6 +961,7 @@ module Rouge
           STORAGE_PATH
           ALL_FLAT
           CATALOG
+          DEFAULT_SCHEMA
         ))
       end
 
@@ -1021,6 +1022,8 @@ module Rouge
           alprd
           roaring
           vortex
+          unity_catalog
+          lance
         ))
       end
 
