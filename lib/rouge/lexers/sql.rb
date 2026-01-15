@@ -962,6 +962,7 @@ module Rouge
           ALL_FLAT
           CATALOG
           DEFAULT_SCHEMA
+          AWS_REGION
         ))
       end
 
