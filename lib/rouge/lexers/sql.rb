@@ -569,6 +569,7 @@ module Rouge
           TABLES
           TABLESAMPLE
           TABLESPACE
+          TARGET
           TEMP
           TEMPLATE
           TEMPORARY
