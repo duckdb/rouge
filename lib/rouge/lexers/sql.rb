@@ -454,6 +454,7 @@ module Rouge
           REASSIGN
           RECHECK
           RECURSIVE
+          recurring
           REF
           REFERENCES
           REFERENCING
@@ -2190,6 +2191,7 @@ module Rouge
           disabled_filesystems
           disabled_log_types
           disabled_loggers
+          disabled_optimizers
           dry_run
           duckdb_api
           ducklake_max_retry_count
