@@ -570,6 +570,7 @@ module Rouge
           TABLES
           TABLESAMPLE
           TABLESPACE
+          TARGET
           TEMP
           TEMPLATE
           TEMPORARY
@@ -858,6 +859,7 @@ module Rouge
           ENCRYPTION_KEY
           ENDPOINT
           ENDPOINT_TYPE
+          ENDPOINT_URL
           ESCAPE
           EXTRA_HTTP_HEADERS
           FIELD_IDS
@@ -961,6 +963,8 @@ module Rouge
           STORAGE_PATH
           ALL_FLAT
           CATALOG
+          DEFAULT_SCHEMA
+          AWS_REGION
         ))
       end
 
@@ -1021,6 +1025,8 @@ module Rouge
           alprd
           roaring
           vortex
+          unity_catalog
+          lance
         ))
       end
 
@@ -1330,6 +1336,9 @@ module Rouge
           iceberg_metadata
           iceberg_scan
           iceberg_snapshots
+          iceberg_table_properties
+          set_iceberg_table_properties
+          remove_iceberg_table_properties
           icu_calendar_names
           icu_sort_key
           ieee754
