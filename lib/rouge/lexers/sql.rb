@@ -2355,6 +2355,7 @@ module Rouge
           zstd_min_string_length
           delete_threshold
           python_scan_all_frames
+          skip_tables
         ))
       end
 
