@@ -2242,6 +2242,7 @@ module Rouge
           force_download
           functions
           hnsw_ef_search
+          hnsw_enable_experimental_persistence
           home_directory
           http_keep_alive
           http_logging_output
@@ -2354,6 +2355,7 @@ module Rouge
           zstd_min_string_length
           delete_threshold
           python_scan_all_frames
+          skip_tables
         ))
       end
 
