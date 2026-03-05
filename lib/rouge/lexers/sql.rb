@@ -2129,6 +2129,9 @@ module Rouge
           enable_logging
           duckdb_proj_compiled_version
           duckdb_proj_version
+          lance_hybrid_search
+          lance_vector_search
+          lance_fts
         ))
       end
 
