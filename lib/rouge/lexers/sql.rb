@@ -617,6 +617,7 @@ module Rouge
           UNLOGGED
           UNNAMED
           UNNEST
+          UNPACK
           UNPIVOT
           UNTIL
           UPDATE
@@ -951,7 +952,6 @@ module Rouge
           TOKEN
           TYPES
           UNION_BY_NAME
-          UNPACK
           URL_STYLE
           USE_SSL
           USE_TMP_FILE
