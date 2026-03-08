@@ -1978,6 +1978,7 @@ module Rouge
           parse_path
           read_blob
           read_text
+          read_duckdb
           dynamic_aggregates
           dynamic_aggregates_any_cte_any_func
           any_func
