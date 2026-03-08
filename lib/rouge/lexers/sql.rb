@@ -2369,50 +2369,59 @@ module Rouge
           cd
           changes
           columns
-          constant
-          constantcode
+          decimal_sep
           databases
+          dump
+          display_colors
           echo
+          edit
+          excel
           exit
           headers
           help
           highlight
           highlight_colors
+          highlight_errors
+          highlight_mode
           highlight_results
           import
           indexes
-          keyword
-          keywordcode
+          last
           large_number_rendering
           log
           maxrows
           maxwidth
+          duckbox
           mode
           multiline
           nullvalue
-          once
           open
+          once
           output
+          pager
           print
+          progress_bar
           prompt
           quit
           read
+          read_line_version
+          render_completion
+          render_errors
           rows
           safe_mode
-          schema
           separator
+          schema
           shell
           show
           singleline
+          startup_text
           system
           tables
+          thousand_sep
           timer
+          ui_command
+          version
           width
-          constant
-          constantcode
-          keyword
-          keywordcode
-          progress_bar
         ))
       end
 
