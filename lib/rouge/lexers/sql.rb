@@ -2360,6 +2360,7 @@ module Rouge
           delete_threshold
           python_scan_all_frames
           skip_tables
+          table_name
         ))
       end
 
