@@ -2134,6 +2134,7 @@ module Rouge
           lance_vector_search
           lance_fts
           odbc_query
+          enable_peg_parser
         ))
       end
 
