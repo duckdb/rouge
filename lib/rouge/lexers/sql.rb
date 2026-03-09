@@ -2133,6 +2133,7 @@ module Rouge
           lance_hybrid_search
           lance_vector_search
           lance_fts
+          odbc_query
         ))
       end
 
