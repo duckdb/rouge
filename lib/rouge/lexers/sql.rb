@@ -2135,6 +2135,8 @@ module Rouge
           lance_fts
           odbc_query
           enable_peg_parser
+          extract_claim_from_jwt
+          extract_claims_from_jwt
         ))
       end
 
