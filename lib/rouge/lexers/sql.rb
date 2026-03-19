@@ -809,6 +809,7 @@ module Rouge
           WKB_BLOB
           GeometryType
           ART
+          VARIANT
         ))
       end
 
