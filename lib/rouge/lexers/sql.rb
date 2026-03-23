@@ -1279,6 +1279,7 @@ module Rouge
           floor
           fmod
           force_checkpoint
+          force_download_threshold
           force_index_join
           format
           format_bytes
