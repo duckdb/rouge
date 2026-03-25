@@ -42,7 +42,7 @@ module Rouge
         isql clone hexdump iconv pacman gzcat flutter zstd unzstd zstdmt
         pkg clang sh ksh fish bash zsh marimo psql sqlite sqlite3 uv uvx
         lsattr chattr ldd otool yay docker tpchgen-cli xcode-select lldb gdb
-        composer
+        composer powershell
       ).join('|')
 
       state :basic do
