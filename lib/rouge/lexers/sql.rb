@@ -2139,6 +2139,17 @@ module Rouge
           enable_peg_parser
           extract_claim_from_jwt
           extract_claims_from_jwt
+          odbc_begin_transaction
+          odbc_bind_params
+          odbc_close
+          odbc_commit
+          odbc_connect
+          odbc_copy
+          odbc_create_params
+          odbc_list_data_sources
+          odbc_list_drivers
+          odbc_query
+          odbc_rollback
         ))
       end
 
