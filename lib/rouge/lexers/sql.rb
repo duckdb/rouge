@@ -966,6 +966,7 @@ module Rouge
           CATALOG
           DEFAULT_SCHEMA
           AWS_REGION
+          WRITE_EMPTY_FILE
         ))
       end
 
