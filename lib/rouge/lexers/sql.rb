@@ -2506,8 +2506,8 @@ module Rouge
         # a dot (e.g., ('some_string').split(' '))
         rule %r/([.])(\w+)/ do |m|
           if self.class.dot_commands.include? m[2]
-            token Name::Property, m[1]
-            token Name::Property, m[2]
+            token Keyword, m[1]
+            token Keyword, m[2]
           else
             token Name, m[1]
             token Name, m[2]
