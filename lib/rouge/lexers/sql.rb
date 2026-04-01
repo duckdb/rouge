@@ -727,6 +727,7 @@ module Rouge
           WAARBIJ
           WAARDEN
           ZOALS
+          TABEL
       ))
       end
 
