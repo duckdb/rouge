@@ -728,6 +728,7 @@ module Rouge
           WAARDEN
           ZOALS
           TABEL
+          EN
       ))
       end
 
