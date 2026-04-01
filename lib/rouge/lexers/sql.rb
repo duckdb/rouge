@@ -710,6 +710,12 @@ module Rouge
           BIGNUM
           METADATA_PARAMETERS
           DATA_INLINING_ROW_LIMIT
+          GROEP
+          WAARDEN
+          TOEVOEGEN
+          VAN
+          WAARBIJ
+          VOLGORDE
       ))
       end
 
@@ -810,6 +816,13 @@ module Rouge
           GeometryType
           ART
           VARIANT
+          GEHEEL_GETAL
+          TEKST
+          KOMMAGETAL
+          TEKST
+          AAN
+          VOLGORDE
+          PER
         ))
       end
 
@@ -2151,6 +2164,7 @@ module Rouge
           odbc_list_drivers
           odbc_query
           odbc_rollback
+          enable_dutch_parser
         ))
       end
 
