@@ -716,6 +716,7 @@ module Rouge
           VAN
           WAARBIJ
           VOLGORDE
+          SELECTEER
       ))
       end
 
