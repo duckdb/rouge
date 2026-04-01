@@ -717,6 +717,8 @@ module Rouge
           WAARBIJ
           VOLGORDE
           SELECTEER
+          MAAK
+          TABEL
       ))
       end
 
