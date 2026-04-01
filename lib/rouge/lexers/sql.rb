@@ -710,15 +710,23 @@ module Rouge
           BIGNUM
           METADATA_PARAMETERS
           DATA_INLINING_ROW_LIMIT
+          AAN
+          AFLOPEND
+          ALS
+          GOOI_WEG
           GROEP
-          WAARDEN
+          LINKS
+          MAAK
+          OP
+          PER
+          SAMENVOEGEN
+          SELECTEER
           TOEVOEGEN
           VAN
-          WAARBIJ
           VOLGORDE
-          SELECTEER
-          MAAK
-          TABEL
+          WAARBIJ
+          WAARDEN
+          ZOALS
       ))
       end
 
@@ -823,8 +831,6 @@ module Rouge
           TEKST
           KOMMAGETAL
           TEKST
-          AAN
-          VOLGORDE
           PER
         ))
       end
