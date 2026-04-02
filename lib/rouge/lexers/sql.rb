@@ -710,6 +710,25 @@ module Rouge
           BIGNUM
           METADATA_PARAMETERS
           DATA_INLINING_ROW_LIMIT
+          AAN
+          AFLOPEND
+          ALS
+          GOOI_WEG
+          GROEP
+          LINKS
+          MAAK
+          OP
+          PER
+          SAMENVOEGEN
+          SELECTEER
+          TOEVOEGEN
+          VAN
+          VOLGORDE
+          WAARBIJ
+          WAARDEN
+          ZOALS
+          TABEL
+          EN
       ))
       end
 
@@ -810,6 +829,11 @@ module Rouge
           GeometryType
           ART
           VARIANT
+          GEHEEL_GETAL
+          TEKST
+          KOMMAGETAL
+          TEKST
+          PER
         ))
       end
 
@@ -966,6 +990,7 @@ module Rouge
           CATALOG
           DEFAULT_SCHEMA
           AWS_REGION
+          WRITE_EMPTY_FILE
         ))
       end
 
@@ -1279,6 +1304,7 @@ module Rouge
           floor
           fmod
           force_checkpoint
+          force_download_threshold
           force_index_join
           format
           format_bytes
@@ -2138,6 +2164,18 @@ module Rouge
           enable_peg_parser
           extract_claim_from_jwt
           extract_claims_from_jwt
+          odbc_begin_transaction
+          odbc_bind_params
+          odbc_close
+          odbc_commit
+          odbc_connect
+          odbc_copy
+          odbc_create_params
+          odbc_list_data_sources
+          odbc_list_drivers
+          odbc_query
+          odbc_rollback
+          enable_dutch_parser
         ))
       end
 
@@ -2493,8 +2531,8 @@ module Rouge
         # a dot (e.g., ('some_string').split(' '))
         rule %r/([.])(\w+)/ do |m|
           if self.class.dot_commands.include? m[2]
-            token Name::Property, m[1]
-            token Name::Property, m[2]
+            token Keyword, m[1]
+            token Keyword, m[2]
           else
             token Name, m[1]
             token Name, m[2]
