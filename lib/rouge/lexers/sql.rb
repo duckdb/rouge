@@ -2458,7 +2458,7 @@ module Rouge
         rule %r/-?\d[\d_]*\.\d[\d_]*([Ee]-?\d[\d_]*(\.\d[\d_]*)?)?/, Num::Float
         rule %r/-?\d[\d_]*([Ee]-?\d[\d_]*)?/, Num::Integer
 
-        rule %r/^(INSTALL|LOAD|UPDATE)(\s+)(\w+)/ do |m|
+        rule %r/^(FORCE INSTALL|INSTALL|LOAD|UPDATE)(\s+)(\w+)/ do |m|
           token Keyword, m[1]
           token Name, m[2]
           if m[3] == "EXTENSIONS"
