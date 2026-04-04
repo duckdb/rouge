@@ -1704,193 +1704,169 @@ module Rouge
           sqlite_scan
           sqlsmith
           sqrt
-          st_area
+          ST_Affine
           ST_Area
-          st_area_spheroid
           ST_Area_Spheroid
-          st_asgeojson
           ST_AsGeoJSON
-          st_ashexewkb
-          ST_AsHexEWKB
-          st_ashexwkb
-          ST_AsHexWKB
-          st_astext
-          ST_AsText
-          st_aswkb
-          ST_AsWKB
-          st_boundary
+          ST_AsHEXWKB
+          ST_AsMVT
+          ST_AsMVTGeom
+          ST_AsSVG
+          ST_Azimuth
           ST_Boundary
-          st_buffer
           ST_Buffer
-          st_centroid
+          ST_BuildArea
           ST_Centroid
-          st_collect
+          ST_ClosestPoint
           ST_Collect
-          st_collectionextract
           ST_CollectionExtract
-          st_contains
+          ST_ConcaveHull
           ST_Contains
-          st_containsproperly
           ST_ContainsProperly
-          st_convexhull
           ST_ConvexHull
-          st_coveredby
+          ST_CoverageInvalidEdges
+          ST_CoverageInvalidEdges_Agg
+          ST_CoverageSimplify
+          ST_CoverageSimplify_Agg
+          ST_CoverageUnion
+          ST_CoverageUnion_Agg
           ST_CoveredBy
-          st_covers
           ST_Covers
-          st_crosses
           ST_Crosses
-          st_difference
-          ST_Difference
-          st_dimension
-          ST_Dimension
-          st_disjoint
-          ST_Disjoint
-          st_distance
-          ST_Distance
-          st_distance_spheroid
-          ST_Distance_Spheroid
-          st_drivers
-          ST_Drivers
-          st_dump
-          ST_Dump
-          st_dwithin
           ST_DWithin
-          st_dwithin_spheroid
+          ST_DWithin_GEOS
           ST_DWithin_Spheroid
-          st_endpoint
+          ST_Difference
+          ST_Dimension
+          ST_Disjoint
+          ST_Distance
+          ST_Distance_GEOS
+          ST_Distance_Sphere
+          ST_Distance_Spheroid
+          ST_Drivers
+          ST_Dump
           ST_EndPoint
-          st_envelope
           ST_Envelope
-          st_envelope_agg
           ST_Envelope_Agg
-          st_equals
           ST_Equals
-          st_extent
+          ST_Expand
           ST_Extent
-          st_exteriorring
+          ST_Extent_Agg
+          ST_Extent_Approx
           ST_ExteriorRing
-          st_flipcoordinates
           ST_FlipCoordinates
-          st_geometrytype
-          ST_GeometryType
-          st_geomfromgeojson
+          ST_Force2D
+          ST_Force3DM
+          ST_Force3DZ
+          ST_Force4D
+          ST_GeneratePoints
           ST_GeomFromGeoJSON
-          st_geomfromhexewkb
-          ST_GeomFromHexEWKB
-          st_geomfromhexwkb
-          ST_GeomFromHexWKB
-          st_geomfromtext
+          ST_GeomFromHEXEWKB
+          ST_GeomFromHEXWKB
           ST_GeomFromText
-          st_geomfromwkb
-          ST_GeomFromWKB
-          st_intersection
+          ST_GeometryType
+          ST_HasM
+          ST_HasZ
+          ST_Hilbert
+          ST_InteriorRingN
+          ST_InterpolatePoint
           ST_Intersection
-          st_intersection_agg
           ST_Intersection_Agg
-          st_intersects
           ST_Intersects
-          st_intersects_extent
-          ST_Intersects_Extent
-          st_isclosed
           ST_IsClosed
-          st_isempty
           ST_IsEmpty
-          st_isring
           ST_IsRing
-          st_issimple
           ST_IsSimple
-          st_isvalid
           ST_IsValid
-          st_length
           ST_Length
-          st_length_spheroid
           ST_Length_Spheroid
-          st_linemerge
+          ST_LineInterpolatePoint
+          ST_LineInterpolatePoints
+          ST_LineLocatePoint
           ST_LineMerge
-          st_linestring2dfromwkb
           ST_LineString2DFromWKB
-          st_makeenvelope
+          ST_LineSubstring
+          ST_LocateAlong
+          ST_LocateBetween
+          ST_M
+          ST_MMax
+          ST_MMin
+          ST_MakeBox2D
           ST_MakeEnvelope
-          st_makeline
           ST_MakeLine
-          st_makepolygon
+          ST_MakePoint
           ST_MakePolygon
-          st_ngeometries
+          ST_MakeValid
+          ST_MaximumInscribedCircle
+          ST_MemUnion_Agg
+          ST_MinimumRotatedRectangle
+          ST_Multi
           ST_NGeometries
-          st_ninteriorrings
           ST_NInteriorRings
-          st_normalize
-          ST_Normalize
-          st_npoints
           ST_NPoints
-          st_numgeometries
+          ST_Node
+          ST_Normalize
           ST_NumGeometries
-          st_numinteriorrings
           ST_NumInteriorRings
-          st_numpoints
           ST_NumPoints
-          st_overlaps
           ST_Overlaps
-          st_perimeter
           ST_Perimeter
-          st_perimeter_spheroid
           ST_Perimeter_Spheroid
-          st_point
           ST_Point
-          st_point2d
           ST_Point2D
-          st_point2dfromwkb
           ST_Point2DFromWKB
-          st_point3d
           ST_Point3D
-          st_point4d
           ST_Point4D
-          st_pointn
           ST_PointN
-          st_pointonsurface
           ST_PointOnSurface
-          st_polygon2dfromwkb
+          ST_Points
           ST_Polygon2DFromWKB
-          st_read
+          ST_Polygonize
+          ST_QuadKey
           ST_Read
-          st_readosm
-          ST_ReadOsm
-          st_reduceprecision
+          ST_ReadOSM
+          ST_ReadSHP
+          ST_Read_Meta
           ST_ReducePrecision
-          st_removerepeatedpoints
           ST_RemoveRepeatedPoints
-          st_reverse
           ST_Reverse
-          st_simplify
+          ST_Rotate
+          ST_RotateX
+          ST_RotateY
+          ST_RotateZ
+          ST_Scale
+          ST_ShortestLine
           ST_Simplify
-          st_simplifypreservetopology
           ST_SimplifyPreserveTopology
-          st_startpoint
           ST_StartPoint
-          st_touches
+          ST_TileEnvelope
           ST_Touches
-          st_transform
+          ST_TransScale
           ST_Transform
-          st_union
+          ST_Translate
           ST_Union
-          st_union_agg
           ST_Union_Agg
-          st_within
+          ST_VoronoiDiagram
           ST_Within
-          st_x
+          ST_WithinProperly
           ST_X
-          st_xmax
-          ST_Xmax
-          st_xmin
-          ST_Xmin
-          st_y
+          ST_XMax
+          ST_XMin
           ST_Y
-          st_ymax
-          ST_Ymax
-          st_ymin
-          ST_Ymin
-          st_generatepoints
+          ST_YMax
+          ST_YMin
+          ST_Z
+          ST_ZMFlag
+          ST_ZMax
+          ST_ZMin
+          st_asbinary
+          st_astext
+          st_aswkb
+          st_aswkt
+          st_crs
+          st_geomfromwkb
+          st_intersects_extent
+          st_setcrs
           starts_with
           stats
           stddev
