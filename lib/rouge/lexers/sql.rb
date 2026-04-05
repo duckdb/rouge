@@ -991,6 +991,7 @@ module Rouge
           DEFAULT_SCHEMA
           AWS_REGION
           WRITE_EMPTY_FILE
+          SHEET
         ))
       end
 
