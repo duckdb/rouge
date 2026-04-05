@@ -2154,6 +2154,7 @@ module Rouge
           odbc_query
           odbc_rollback
           enable_dutch_parser
+          settings
         ))
       end
 
