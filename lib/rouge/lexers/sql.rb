@@ -992,6 +992,7 @@ module Rouge
           AWS_REGION
           WRITE_EMPTY_FILE
           SHEET
+          PROFILE
         ))
       end
 
