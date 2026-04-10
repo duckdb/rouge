@@ -729,6 +729,7 @@ module Rouge
           ZOALS
           TABEL
           EN
+          BUCKET
       ))
       end
 
@@ -912,7 +913,6 @@ module Rouge
           LAYER_CREATION_OPTIONS
           MAX_LINE_SIZE
           MAX_NODE_CAPACITY
-          META_⟨PARAMETER_NAME⟩
           METADATA_CATALOG
           METADATA_PARAMETERS
           METADATA_PATH
@@ -993,7 +993,6 @@ module Rouge
           WRITE_EMPTY_FILE
           SHEET
           PROFILE
-          BUCKET
         ))
       end
 
