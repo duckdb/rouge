@@ -993,6 +993,7 @@ module Rouge
           WRITE_EMPTY_FILE
           SHEET
           PROFILE
+          BUCKET
         ))
       end
 
