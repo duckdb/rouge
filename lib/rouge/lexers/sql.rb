@@ -835,6 +835,7 @@ module Rouge
           KOMMAGETAL
           TEKST
           PER
+          SORTED
         ))
       end
 
