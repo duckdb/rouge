@@ -836,6 +836,7 @@ module Rouge
           TEKST
           PER
           SORTED
+          AUTOMATIC_MIGRATION
         ))
       end
 
