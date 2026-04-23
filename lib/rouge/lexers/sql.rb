@@ -730,6 +730,7 @@ module Rouge
           TABEL
           EN
           BUCKET
+          SWITCH
       ))
       end
 
@@ -995,6 +996,8 @@ module Rouge
           WRITE_EMPTY_FILE
           SHEET
           PROFILE
+          SHREDDING
+          RECOVERY_MODE
         ))
       end
 
@@ -2157,6 +2160,8 @@ module Rouge
           odbc_rollback
           enable_dutch_parser
           settings
+          parse_formatted_bytes
+          sleep_ms
         ))
       end
 
@@ -2448,6 +2453,7 @@ module Rouge
           ui_command
           version
           width
+          vacuum_rebuild_indexes
         ))
       end
 
