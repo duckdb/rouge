@@ -729,6 +729,8 @@ module Rouge
           ZOALS
           TABEL
           EN
+          BUCKET
+          SWITCH
       ))
       end
 
@@ -834,6 +836,8 @@ module Rouge
           KOMMAGETAL
           TEKST
           PER
+          SORTED
+          AUTOMATIC_MIGRATION
         ))
       end
 
@@ -912,7 +916,6 @@ module Rouge
           LAYER_CREATION_OPTIONS
           MAX_LINE_SIZE
           MAX_NODE_CAPACITY
-          META_⟨PARAMETER_NAME⟩
           METADATA_CATALOG
           METADATA_PARAMETERS
           METADATA_PATH
@@ -993,6 +996,8 @@ module Rouge
           WRITE_EMPTY_FILE
           SHEET
           PROFILE
+          SHREDDING
+          RECOVERY_MODE
         ))
       end
 
@@ -2157,6 +2162,8 @@ module Rouge
           odbc_rollback
           enable_dutch_parser
           settings
+          parse_formatted_bytes
+          sleep_ms
         ))
       end
 
@@ -2448,6 +2455,7 @@ module Rouge
           ui_command
           version
           width
+          vacuum_rebuild_indexes
         ))
       end
 
