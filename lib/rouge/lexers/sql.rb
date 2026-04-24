@@ -1605,6 +1605,8 @@ module Rouge
           postgres_query
           postgres_scan
           postgres_scan_pushdown
+          postgres_hstore_get
+          postgres_hstore_to_json
           pow
           power
           pragma_collations
