@@ -729,7 +729,6 @@ module Rouge
           ZOALS
           TABEL
           EN
-          BUCKET
           SWITCH
       ))
       end
@@ -2164,6 +2163,7 @@ module Rouge
           settings
           parse_formatted_bytes
           sleep_ms
+          bucket
         ))
       end
 
