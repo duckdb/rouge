@@ -2164,6 +2164,7 @@ module Rouge
           parse_formatted_bytes
           sleep_ms
           bucket
+          call
         ))
       end
 
