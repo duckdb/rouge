@@ -2165,6 +2165,7 @@ module Rouge
           sleep_ms
           bucket
           call
+          unity_catalog_checkpoint_table
         ))
       end
 
