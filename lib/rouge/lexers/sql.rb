@@ -730,6 +730,9 @@ module Rouge
           TABEL
           EN
           SWITCH
+          VISUALISE
+          VISUALIZE
+          DRAW
       ))
       end
 
