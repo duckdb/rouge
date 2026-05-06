@@ -2169,6 +2169,7 @@ module Rouge
           bucket
           call
           unity_catalog_checkpoint_table
+          truncate_duckdb_logs
         ))
       end
 
