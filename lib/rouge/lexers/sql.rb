@@ -2168,6 +2168,8 @@ module Rouge
           sleep_ms
           bucket
           call
+          disable_logging
+          enable_logging
           unity_catalog_checkpoint_table
           truncate_duckdb_logs
         ))
@@ -2224,7 +2226,6 @@ module Rouge
           default_secret_storage
           disable_checkpoint_on_shutdown
           disable_database_invalidation
-          disable_logging
           disable_object_cache
           disable_optimizer
           disable_parquet_prefetching
@@ -2256,7 +2257,6 @@ module Rouge
           enable_geoparquet_conversion
           enable_http_logging
           enable_http_metadata_cache
-          enable_logging
           enable_macro_dependencies
           enable_object_cache
           enable_optimizer
