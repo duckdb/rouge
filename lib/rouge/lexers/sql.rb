@@ -1000,6 +1000,9 @@ module Rouge
           PROFILE
           SHREDDING
           RECOVERY_MODE
+          META
+          NAME
+          DISABLE_SSL
         ))
       end
 
@@ -2172,6 +2175,15 @@ module Rouge
           enable_logging
           unity_catalog_checkpoint_table
           truncate_duckdb_logs
+          query
+          quack_serve
+          quack_identify
+          quack_stop
+          quack_query
+          quack_query_by_name
+          quack_uri_parser
+          quack_check_token
+          quack_nop_authorization
         ))
       end
 
