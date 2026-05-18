@@ -1003,6 +1003,60 @@ module Rouge
           META
           NAME
           DISABLE_SSL
+          HOST
+          HOSTADDR
+          PORT
+          DBNAME
+          USER
+          PASSWORD
+          PASSFILE
+          REQUIRE_AUTH
+          CHANNEL_BINDING
+          CONNECT_TIMEOUT
+          CLIENT_ENCODING
+          OPTIONS
+          APPLICATION_NAME
+          FALLBACK_APPLICATION_NAME
+          KEEPALIVES
+          KEEPALIVES_IDLE
+          KEEPALIVES_INTERVAL
+          KEEPALIVES_COUNT
+          TCP_USER_TIMEOUT
+          REPLICATION
+          GSSENCMODE
+          SSLMODE
+          REQUIRESSL
+          SSLNEGOTIATION
+          SSLCOMPRESSION
+          SSLCERT
+          SSLKEY
+          SSLKEYLOGFILE
+          SSLPASSWORD
+          SSLCERTMODE
+          SSLROOTCERT
+          SSLCRL
+          SSLCRLDIR
+          SSLSNI
+          REQUIREPEER
+          SSL_MIN_PROTOCOL_VERSION
+          SSL_MAX_PROTOCOL_VERSION
+          MIN_PROTOCOL_VERSION
+          MAX_PROTOCOL_VERSION
+          KRBSRVNAME
+          GSSLIB
+          GSSDELEGATION
+          SCRAM_CLIENT_KEY
+          SCRAM_SERVER_KEY
+          SERVICE
+          TARGET_SESSION_ATTRS
+          LOAD_BALANCE_HOSTS
+          OAUTH_ISSUER
+          OAUTH_CLIENT_ID
+          OAUTH_CLIENT_SECRET
+          OAUTH_SCOPE
+          DATABASE
+          HOSTNAME
+          USERNAME
         ))
       end
 
@@ -2187,6 +2241,7 @@ module Rouge
         ))
       end
 
+      # currently not used by the syntax highlighter of duckdb-web and other duckdb sites
       def self.configuration_options
         @configuration_options ||= Set.new(%w(
           access_mode
