@@ -733,6 +733,7 @@ module Rouge
           VISUALISE
           VISUALIZE
           DRAW
+          IVF_FLAT
       ))
       end
 
@@ -1054,9 +1055,14 @@ module Rouge
           OAUTH_CLIENT_ID
           OAUTH_CLIENT_SECRET
           OAUTH_SCOPE
+          AWS_RDS_SECRET
           DATABASE
           HOSTNAME
           USERNAME
+          RDS_USER
+          RDS_HOST
+          RDS_PORT
+          SECRET_STORAGE_TABLE
         ))
       end
 
