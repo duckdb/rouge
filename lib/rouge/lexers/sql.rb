@@ -2244,6 +2244,7 @@ module Rouge
           quack_uri_parser
           quack_check_token
           quack_nop_authorization
+          variant_typeof
         ))
       end
 
