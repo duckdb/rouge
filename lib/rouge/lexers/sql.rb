@@ -2246,6 +2246,9 @@ module Rouge
           quack_check_token
           quack_nop_authorization
           variant_typeof
+          variant_contains
+          variant_keys
+          variant_type
         ))
       end
 
