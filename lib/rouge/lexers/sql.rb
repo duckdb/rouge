@@ -735,6 +735,9 @@ module Rouge
           DRAW
           IVF_FLAT
           REPOSITORY
+          APPROX
+          NEAREST
+          SIMILARITY
       ))
       end
 
