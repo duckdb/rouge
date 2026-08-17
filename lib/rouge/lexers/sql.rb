@@ -734,6 +734,7 @@ module Rouge
           VISUALIZE
           DRAW
           IVF_FLAT
+          REPOSITORY
       ))
       end
 
