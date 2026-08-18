@@ -1493,6 +1493,14 @@ module Rouge
           json_valid
           json_each
           json_tree
+          json_set
+          json_insert
+          json_replace
+          json_remove
+          json_merge_patch_diff
+          json_deep_merge
+          json_normalize
+          json_strip_nulls
           julian
           kahan_sum
           kurtosis
