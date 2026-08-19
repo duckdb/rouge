@@ -738,6 +738,10 @@ module Rouge
           APPROX
           NEAREST
           SIMILARITY
+          REGISTER
+          RESOURCE
+          RESOURCES
+          SHOW
       ))
       end
 
