@@ -2555,6 +2555,10 @@ module Rouge
           version
           width
           vacuum_rebuild_indexes
+          constant
+          constantcode
+          keyword
+          keywordcode
         ))
       end
 
