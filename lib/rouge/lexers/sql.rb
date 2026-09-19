@@ -860,6 +860,7 @@ module Rouge
           ALLOW_QUOTED_NULLS
           APPEND
           ASSUME_ROLE_ARN
+          AUTHORIZATION_TYPE
           AUTO
           AUTO_DETECT
           AUTO_TYPE_CANDIDATES
