@@ -2637,17 +2637,21 @@ module Rouge
         # The rationale behind this is that many function names are common words
         # (e.g., version, month, year), and we do *not* want these to be highlighted
         # as function names if they are not followed by a parenthesis.
-        rule %r/\w[\w\d]*/ do |m|
-          if self.class.keywords_type.include? m[0]
+        # The lookahead captures a following ' ?:=' or ' ?=' (without consuming it),
+        # which is needed to decide whether a lowercase option name counts as a keyword.
+        rule %r/(\w[\w\d]*)(?=( ?:?=)?)/ do |m|
+          word = m[1]
+          # option names count if they are all uppercase, or if they are all lowercase
+          # and followed by an assignment (e.g., `header = true` or `header := true`)
+          is_option_name = self.class.option_names.include?(word.upcase) &&
+            (word == word.upcase || (word == word.downcase && m[2]))
+          if self.class.keywords_type.include? word
             token Name::Builtin
-          # TODO: the lowercase variant of option_names should only match if it's followed by
-          # the regex ' ?:=' or the regex ' ?='
-          elsif self.class.keywords.include? m[0] or
-              self.class.option_values.include? m[0] or
-              # option names only count is they are all lowercase or all uppercase
-              ((m[0] == m[0].downcase or m[0] == m[0].upcase) and self.class.option_names.include? m[0].upcase)
+          elsif self.class.keywords.include? word or
+              self.class.option_values.include? word or
+              is_option_name
             token Keyword
-          elsif self.class.configuration_options.include? m[0]
+          elsif self.class.configuration_options.include? word
             token Name::Property
           else
             token Name
