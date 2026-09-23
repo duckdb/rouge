@@ -1073,6 +1073,7 @@ module Rouge
           RDS_HOST
           RDS_PORT
           SECRET_STORAGE_TABLE
+          GEOJSON
         ))
       end
 
