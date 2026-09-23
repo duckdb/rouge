@@ -742,6 +742,7 @@ module Rouge
           RESOURCE
           RESOURCES
           SHOW
+          SECURE
       ))
       end
 
@@ -2492,11 +2493,13 @@ module Rouge
           python_scan_all_frames
           skip_tables
           table_name
+          null_on_division_by_zero
         ))
       end
 
       def self.dot_commands
         @dot_commands ||= Set.new(%w(
+          about
           bail
           binary
           cd
