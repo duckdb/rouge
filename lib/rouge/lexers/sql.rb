@@ -884,7 +884,6 @@ module Rouge
           CONFIG
           CONNECTION_STRING
           CREATE_IF_NOT_EXISTS
-          CREDENTIAL_CHAIN
           DATA_INLINING_ROW_LIMIT
           DATA_PATH
           DATEFORMAT
@@ -1112,7 +1111,7 @@ module Rouge
           v2
           v3
           zstd
-          credentials_chain
+          credential_chain
           delta
           iceberg
           glue
