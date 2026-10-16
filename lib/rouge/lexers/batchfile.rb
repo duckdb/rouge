@@ -3,6 +3,8 @@
 
 module Rouge
   module Lexers
+    load_lexer 'shell.rb'
+
     class Batchfile < RegexLexer
       title "Batch"
       desc "Various shell languages, including sh and bash (multiline)"
@@ -18,32 +20,7 @@ module Rouge
         select continue until esac elif in
       ).join('|')
 
-      BUILTINS = %w(
-        alias bg bind break builtin caller cd command compgen
-        complete declare dirs disown enable eval exec exit
-        export false fc fg getopts hash help history jobs let
-        local logout mapfile popd pushd pwd read readonly set
-        shift shopt source suspend test time times trap true type
-        typeset ulimit umask unalias unset wait
-
-        cat tac nl od base32 base64 fmt pr fold head tail split csplit
-        wc sum cksum b2sum md5sum sha1sum sha224sum sha256sum sha384sum
-        sha512sum sort shuf uniq comm ptx tsort cut paste join tr expand
-        unexpand ls dir vdir dircolors cp dd mv rm shred link ln
-        mkdir mkfifo mknod readlink rmdir unlink chown chgrp chmod touch
-        df du stat sync truncate echo printf yes expr tee basename dirname
-        pathchk mktemp realpath pwd stty printenv tty id logname whoami
-        groups users who date arch nproc uname hostname hostid uptime chcon
-        runcon chroot env nice nohup stdbuf timeout kill sleep factor numfmt
-        seq tar grep sudo awk sed gzip gunzip apt apt-get yum apk brew
-        python python3 pip pip3 unzip duckdb npm cargo go get
-        winget conda mamba make ninja cmake git g\+\+ ninja-build
-        libssl-dev openssl-devel wget curl aws tree uplot jq tldr pcregrep
-        isql clone hexdump iconv pacman gzcat flutter zstd unzstd zstdmt
-        pkg clang sh ksh fish bash zsh marimo psql sqlite sqlite3 uv uvx
-        lsattr chattr ldd otool yay docker tpchgen-cli xcode-select lldb gdb
-        composer powershell rlwrap ccache dbt
-      ).join('|')
+      BUILTINS = Shell::BUILTINS
 
       state :basic do
         rule %r/#.*$/, Comment
