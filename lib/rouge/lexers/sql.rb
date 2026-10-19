@@ -924,6 +924,7 @@ module Rouge
           KMS_KEY_ID
           KV_METADATA
           LAMBDA
+          lambda
           LAYER
           LAYER_CREATION_OPTIONS
           MAX_LINE_SIZE
