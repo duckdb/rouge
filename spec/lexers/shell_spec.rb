@@ -5,6 +5,15 @@ describe Rouge::Lexers::Shell do
   let(:subject) { Rouge::Lexers::Shell.new }
 
   include Support::Lexing
+
+  it 'highlights placeholders and prompts' do
+    assert_tokens_equal '«$» ls ⟨dir⟩',
+      ['Generic.Prompt', '$'],
+      ['Text', ' '],
+      ['Name.Builtin', 'ls'],
+      ['Text', ' '],
+      ['Generic.Emph', 'dir']
+  end
   it 'parses a basic shell string' do
     tokens = subject.lex('foo=bar').to_a
     assert { tokens.size == 3 }

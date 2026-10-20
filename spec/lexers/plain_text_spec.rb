@@ -4,6 +4,16 @@
 describe Rouge::Lexers::PlainText do
   let(:subject) { Rouge::Lexers::PlainText.new }
 
+  include Support::Lexing
+
+  it 'highlights placeholders and prompts' do
+    assert_tokens_equal '«$» open ⟨file⟩ now',
+      ['Generic.Prompt', '$'],
+      ['Text', ' open '],
+      ['Generic.Emph', 'file'],
+      ['Text', ' now']
+  end
+
   describe 'guessing' do
     include Support::Guessing
 

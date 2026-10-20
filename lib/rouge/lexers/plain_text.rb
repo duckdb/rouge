@@ -20,7 +20,18 @@ module Rouge
       end
 
       def stream_tokens(string, &b)
-        yield self.token, string
+        # Text between angle brackets denotes a placeholder
+        # where the user needs to change the input,
+        # text between guillemets denotes a prompt
+        string.scan(/⟨([^⟩]+)⟩|«([^»]+)»|([^⟨«]+|[⟨«])/) do |placeholder, prompt, text|
+          if placeholder
+            yield Generic::Emph, placeholder
+          elsif prompt
+            yield Generic::Prompt, prompt
+          else
+            yield self.token, text
+          end
+        end
       end
     end
   end

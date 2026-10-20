@@ -53,6 +53,16 @@ module Rouge
       ).join('|')
 
       state :basic do
+        # Text between angle brackets denotes a placeholder
+        # where the user needs to change the input
+        rule %r/⟨([^⟩]+)⟩/ do |m|
+          token Generic::Emph, m[1]
+        end
+        # Text between guillemets denotes a prompt
+        rule %r/«([^»]+)»/ do |m|
+          token Generic::Prompt, m[1]
+        end
+
         rule %r/#.*$/, Comment
 
         rule %r/\b(#{KEYWORDS})\s*\b/, Keyword
@@ -143,7 +153,8 @@ module Rouge
         rule %r/;/, Punctuation
 
         rule %r/--?[\w-]+/, Name::Tag
-        rule %r/[^=\*\s{}()$"'`;\\<]+/, Text
+        rule %r/[^=\*\s{}()$"'`;\\<⟨«]+/, Text
+        rule %r/[⟨«]/, Text
         rule %r/\d+(?= |\Z)/, Num
         rule %r/</, Text
         mixin :interp
