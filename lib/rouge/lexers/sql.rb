@@ -2267,6 +2267,7 @@ module Rouge
           variant_contains
           variant_keys
           variant_type
+          truncate
         ))
       end
 
