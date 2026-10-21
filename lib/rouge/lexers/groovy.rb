@@ -39,6 +39,10 @@ module Rouge
         @constants ||= Set.new %w(true false null)
       end
 
+      def self.functions
+        @functions ||= Set.new %w(dependencies implementation)
+      end
+
       state :root do
         rule %r(^
           (\s*(?:\w[\w.\[\]]*\s+)+?) # return arguments
@@ -83,6 +87,8 @@ module Rouge
             token Keyword::Type
           elsif self.class.constants.include? m[0]
             token Keyword::Constant
+          elsif self.class.functions.include? m[0]
+            token Name::Function
           else
             token Name
           end
