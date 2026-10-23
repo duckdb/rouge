@@ -40,7 +40,7 @@ module Rouge
       end
 
       def self.functions
-        @functions ||= Set.new %w(dependencies implementation)
+        @functions ||= Set.new %w(dependencies implementation repositories maven)
       end
 
       state :root do
