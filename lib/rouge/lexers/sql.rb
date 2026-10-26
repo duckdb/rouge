@@ -2268,6 +2268,7 @@ module Rouge
           variant_keys
           variant_type
           truncate
+          shell_history
         ))
       end
 
