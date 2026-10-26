@@ -943,6 +943,7 @@ module Rouge
           OAUTH2_SCOPE
           OAUTH2_SERVER_URI
           OPEN_OPTIONS
+          ORDER_BY
           OVERRIDE_DATA_PATH
           OVERWRITE_OR_IGNORE
           OVERWRITE_RANGE
@@ -950,6 +951,7 @@ module Rouge
           PARALLEL
           PARQUET_VERSION
           PARTITION_BY
+          PARTITION_PATH
           PARTITIONED
           PER_THREAD_OUTPUT
           PERSISTENT
