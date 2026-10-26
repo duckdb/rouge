@@ -2569,6 +2569,9 @@ module Rouge
           keyword
           keywordcode
           history
+          serve_command
+          web
+          aws
         ))
       end
 
