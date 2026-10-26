@@ -2568,6 +2568,7 @@ module Rouge
           constantcode
           keyword
           keywordcode
+          history
         ))
       end
 
