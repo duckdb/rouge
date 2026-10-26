@@ -2572,6 +2572,10 @@ module Rouge
           serve_command
           web
           aws
+          manual
+          maxbytes
+          maxcellwidth
+          connect_command
         ))
       end
 
