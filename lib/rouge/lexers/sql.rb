@@ -180,6 +180,7 @@ module Rouge
           DISCARD
           DISCONNECT
           DISPATCH
+          DISTANCE
           DISTINCT
           DO
           DOCUMENT
