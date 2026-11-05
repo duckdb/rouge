@@ -2138,7 +2138,6 @@ module Rouge
           dq_concat
           nq_concat
           acosh
-          argmax
           array_to_string_comma_default
           asinh
           atanh
@@ -2146,8 +2145,6 @@ module Rouge
           countif
           create_sort_key
           decode_sort_key
-          current_database
-          current_query
           duckdb_log_contexts
           duckdb_logs
           duckdb_secret_types
@@ -2155,21 +2152,13 @@ module Rouge
           get_block_size
           grade_up
           histogram_values
-          in_search_path
           json_pretty
-          json_serialize_plan
-          julian
           make_timestamp_ns
-          map_concat
           map_extract_value
           normalized_interval
-          sem
           struct_concat
           struct_extract_at
-          sum_no_overflow
-          sumkahan
           timetz_byte_comparable
-          to_base
           to_quarters
           unpivot_list
           write_log
@@ -2200,20 +2189,16 @@ module Rouge
           snapshots
           table_changes
           table_deletions
-          table_info
           table_insertions
           flush_inlined_data
           rewrite_data_files
           delete_orphaned_files
-          checkpoint
           to_iceberg
           last_committed_snapshot
           current_snapshot
           remove_data_file
           options
           set_option
-          snapshots
-          merge_adjacent_files
           fill
           add_and_multiply
           scaling_params
@@ -2245,7 +2230,6 @@ module Rouge
           odbc_create_params
           odbc_list_data_sources
           odbc_list_drivers
-          odbc_query
           odbc_rollback
           enable_dutch_parser
           settings
@@ -2254,10 +2238,8 @@ module Rouge
           bucket
           call
           disable_logging
-          enable_logging
           unity_catalog_checkpoint_table
           truncate_duckdb_logs
-          query
           quack_serve
           quack_identify
           quack_stop
@@ -2272,6 +2254,182 @@ module Rouge
           variant_type
           truncate
           shell_history
+          ago
+          approx_top_k
+          arg_max_null
+          arg_max_nulls_last
+          arg_min_null
+          arg_min_nulls_last
+          array_cosine_distance
+          array_negative_dot_product
+          array_negative_inner_product
+          array_reduce
+          binom
+          broadcast
+          char_length
+          character_length
+          check_peg_parser
+          cosh
+          current_query_id
+          days_in_month
+          decimal_average
+          decimal_division
+          delta_domain_metadata
+          delta_list_files
+          delta_set_transaction_version
+          dense_rank
+          distinct
+          duckdb_available_metrics
+          duckdb_connection_count
+          duckdb_coordinate_systems
+          duckdb_extension_repositories
+          duckdb_format_sql
+          duckdb_grammar_extensions
+          duckdb_optimizers
+          duckdb_profiling_settings
+          duckdb_secret_type_parameters
+          duckdb_triggers
+          duckdb_variables
+          equi_width_bins
+          formatreadabledecimalsize
+          formatreadablesize
+          get_type
+          histogram_exact
+          hive_partition_component
+          iceberg_bucket
+          iceberg_column_stats
+          iceberg_files
+          iceberg_load_table_response
+          iceberg_partition_specs
+          iceberg_partition_stats
+          iceberg_rewrite_data_files
+          iceberg_rollback_to_snapshot
+          iceberg_schema_properties
+          iceberg_truncate
+          iceberg_view_metadata
+          if
+          invoke
+          is_histogram_other_bin
+          json_exists
+          json_value
+          kurtosis_pop
+          list_cosine_distance
+          list_kurtosis_pop
+          list_negative_dot_product
+          list_negative_inner_product
+          lttb
+          make_timestamp_ms
+          make_type
+          netmask
+          network
+          overlay
+          pagerank
+          parquet_full_metadata
+          parse_dirname
+          parse_dirpath
+          parse_filename
+          path_join
+          postgres_clear_cache
+          postgres_configure_pool
+          read_postgres_binary
+          reduce
+          regexp_escape
+          regexp_split_to_table
+          remap_struct
+          remove_iceberg_schema_properties
+          replace_type
+          set_iceberg_schema_properties
+          setval
+          sha1
+          sinh
+          sql_tokenize
+          st_affine
+          st_area
+          st_asgeojson
+          st_ashexwkb
+          st_asmvt
+          st_asmvtgeom
+          st_assvg
+          st_azimuth
+          st_centroid
+          st_collect
+          st_collectionextract
+          st_contains
+          st_dimension
+          st_distance
+          st_distance_spheroid
+          st_drivers
+          st_dump
+          st_endpoint
+          st_extent
+          st_extent_agg
+          st_generatepoints
+          st_geometrytype
+          st_geomfromgeojson
+          st_geomfromtext
+          st_hasm
+          st_hasz
+          st_intersects
+          st_linestring
+          st_m
+          st_makebox2d
+          st_makeenvelope
+          st_makeline
+          st_makepoint
+          st_makepolygon
+          st_maximuminscribedcircle
+          st_mmax
+          st_mmin
+          st_multi
+          st_node
+          st_point
+          st_points
+          st_polygonize
+          st_quadkey
+          st_read
+          st_read_meta
+          st_readosm
+          st_rotatex
+          st_rotatey
+          st_rotatez
+          st_startpoint
+          st_tileenvelope
+          st_transform
+          st_transscale
+          st_union
+          st_within
+          st_x
+          st_xmax
+          st_xmin
+          st_y
+          st_ymax
+          st_ymin
+          st_z
+          st_zmax
+          st_zmflag
+          st_zmin
+          struct_contains
+          struct_keys
+          struct_position
+          struct_update
+          struct_values
+          switch
+          tanh
+          to_centuries
+          to_decades
+          to_millennia
+          to_weeks
+          try
+          variant_array_length
+          variant_comparator
+          variant_exists
+          variant_extract
+          variant_extract_string
+          variant_group_array
+          variant_group_object
+          variant_normalize
+          wavg
+          weighted_avg
         ))
       end
 
