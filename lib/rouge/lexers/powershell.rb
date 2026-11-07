@@ -18,20 +18,6 @@ module Rouge
         SupportsPaging SupportsShouldProcess
       )
 
-      # https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_automatic_variables?view=powershell-6
-      AUTO_VARS = %w(
-        \$\$ \$\? \$\^ \$_
-        \$args \$ConsoleFileName \$Error \$Event \$EventArgs \$EventSubscriber
-        \$ExecutionContext \$false \$foreach \$HOME \$Host \$input \$IsCoreCLR
-        \$IsLinux \$IsMacOS \$IsWindows \$LastExitCode \$Matches \$MyInvocation
-        \$NestedPromptLevel \$null \$PID \$PROFILE \$PSBoundParameters \$PSCmdlet
-        \$PSCommandPath \$PSCulture \$PSDebugContext \$PSHOME \$PSItem
-        \$PSScriptRoot \$PSSenderInfo \$PSUICulture \$PSVersionTable \$PWD
-        \$REPORTERRORSHOWEXCEPTIONCLASS \$REPORTERRORSHOWINNEREXCEPTION
-        \$REPORTERRORSHOWSOURCE \$REPORTERRORSHOWSTACKTRACE
-        \$SENDER \$ShellId \$StackTrace \$switch \$this \$true
-      ).join('|')
-
       # https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_reserved_words?view=powershell-6
       KEYWORDS = %w(
         assembly exit process base filter public begin finally return break for
@@ -78,13 +64,11 @@ module Rouge
         remotehelprunspace externalhelp
       ).join('|')
 
+      # Variables are highlighted as a single token, like in the shell lexer:
+      # $foo, $env:PATH, ${foo bar}, and automatic variables such as $_, $?, $$ and $true
       state :variable do
-        rule %r/#{AUTO_VARS}/, Name::Builtin::Pseudo
-        rule %r/(\$)(?:(\w+)(:))?(\w+|\{(?:[^`]|`.)+?\})/ do
-          groups Name::Variable, Name::Namespace, Punctuation, Name::Variable
-        end
-        rule %r/\$\w+/, Name::Variable
-        rule %r/\$\{(?:[^`]|`.)+?\}/, Name::Variable
+        rule %r/\$(?:\w+:)?(?:\w+|\{(?:[^`]|`.)+?\})/, Name::Variable
+        rule %r/\$[$?^]/, Name::Variable
       end
 
       state :multiline do

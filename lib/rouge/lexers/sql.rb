@@ -2760,6 +2760,9 @@ module Rouge
         rule %r/«([^»]+)»/ do |m|
           token Generic::Prompt, m[1]
         end
+        # Variables and prepared statement parameters (e.g., $1, $name),
+        # highlighted the same way as in the shell lexer
+        rule %r/\$\w+/, Name::Variable
         # Numbers
         rule %r/-?\d[\d_]*\.\d[\d_]*([Ee]-?\d[\d_]*(\.\d[\d_]*)?)?/, Num::Float
         rule %r/-?\d[\d_]*([Ee]-?\d[\d_]*)?/, Num::Integer
