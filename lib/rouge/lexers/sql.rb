@@ -301,6 +301,7 @@ module Rouge
           KEY
           KEY_MEMBER
           KEY_TYPE
+          KEYS
           LABEL
           LANCOMPILER
           LANGUAGE
