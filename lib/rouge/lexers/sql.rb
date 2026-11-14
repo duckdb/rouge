@@ -2771,13 +2771,12 @@ module Rouge
         rule %r/-?\d[\d_]*\.\d[\d_]*([Ee]-?\d[\d_]*(\.\d[\d_]*)?)?/, Num::Float
         rule %r/-?\d[\d_]*([Ee]-?\d[\d_]*)?/, Num::Integer
 
-        rule %r/^(INSTALL)(\s+)(AND)(\s+)(LOAD)\b/ do
-          groups Keyword, Text, Keyword, Text, Keyword
-        end
-
-        rule %r/^(INSTALL|FORCE INSTALL|LOAD|INSTALL AND LOAD|FORCE INSTALL AND LOAD|UPDATE)(\s+)(\w+)/ do |m|
+        # The extension name following [FORCE] INSTALL [AND LOAD] / LOAD is a regular name,
+        # even if it is also a keyword or option value (e.g., `iceberg`, `delta`).
+        # The optional `AND LOAD` suffix is matched greedily, so it takes precedence over `INSTALL`.
+        rule %r/^((?:FORCE\s+)?INSTALL(?:\s+AND\s+LOAD)?|LOAD|UPDATE)(\s+)(\w+)/ do |m|
           token Keyword, m[1]
-          token Name, m[2]
+          token Text, m[2]
           if m[3] == "EXTENSIONS"
             token Keyword, m[3]
           else
