@@ -2775,7 +2775,7 @@ module Rouge
           groups Keyword, Text, Keyword, Text, Keyword
         end
 
-        rule %r/^(FORCE INSTALL|INSTALL|LOAD|UPDATE)(\s+)(\w+)/ do |m|
+        rule %r/^(INSTALL|FORCE INSTALL|LOAD|INSTALL AND LOAD|FORCE INSTALL AND LOAD|UPDATE)(\s+)(\w+)/ do |m|
           token Keyword, m[1]
           token Name, m[2]
           if m[3] == "EXTENSIONS"
