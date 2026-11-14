@@ -2431,6 +2431,7 @@ module Rouge
           variant_normalize
           wavg
           weighted_avg
+          sirius_status
         ))
       end
 
