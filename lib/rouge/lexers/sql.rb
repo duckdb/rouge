@@ -2746,8 +2746,10 @@ module Rouge
         rule %r/'/, Str::Single, :single_string
         # A double-quoted string refers to a database object in our default SQL
         # dialect, which is appropriate for e.g. PostgreSQL and DuckDB.
-        rule %r/"/, Name::Variable, :double_string
-        rule %r/`/, Name::Variable, :backtick
+        # Quoted identifiers are names, not variables: Name::Variable is
+        # reserved for $-prefixed variables and parameters (see below).
+        rule %r/"/, Name, :double_string
+        rule %r/`/, Name, :backtick
         # Text between angle brackets denotes a placeholder
         # where the user needs to change the input
         rule %r/⟨([^⟩]+)⟩/ do |m|
@@ -2854,8 +2856,8 @@ module Rouge
 
       state :backtick do
         rule %r/``/, Str::Escape
-        rule %r/`/, Name::Variable, :pop!
-        rule %r/[^\\`]+/, Name::Variable
+        rule %r/`/, Name, :pop!
+        rule %r/[^\\`]+/, Name
       end
 
       state :single_string do
@@ -2870,8 +2872,8 @@ module Rouge
 
       state :double_string do
         rule %r/""/, Str::Escape
-        rule %r/"/, Name::Variable, :pop!
-        rule %r/[^"]+/, Name::Variable
+        rule %r/"/, Name, :pop!
+        rule %r/[^"]+/, Name
       end
     end
   end
