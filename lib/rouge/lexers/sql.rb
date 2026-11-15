@@ -2433,6 +2433,7 @@ module Rouge
           wavg
           weighted_avg
           sirius_status
+          waddle
         ))
       end
 
