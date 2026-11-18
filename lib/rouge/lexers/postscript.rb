@@ -56,7 +56,7 @@ module Rouge
 
         # References: the rest of the line after a /name is plain text
         rule %r'(/#{valid_name})(.*)' do
-          groups Name::Variable, Text
+          groups Name::Builtin, Text
         end
 
         rule %r'[{}<>\[\]]', Punctuation
