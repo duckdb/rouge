@@ -54,8 +54,10 @@ module Rouge
         # String literals are awkward; enter separate state.
         rule %r'\(', Str, :stringliteral
 
-        # References
-        rule %r'/#{valid_name}', Name::Variable
+        # References: the rest of the line after a /name is plain text
+        rule %r'(/#{valid_name})(.*)' do
+          groups Name::Variable, Text
+        end
 
         rule %r'[{}<>\[\]]', Punctuation
 
