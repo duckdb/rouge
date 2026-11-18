@@ -176,6 +176,7 @@
 - sed (`sed`)
 - shell (`shell`)
 - Sieve (`sieve`)
+- Slash Commands (`slash`)
 - Slice (`slice`)
 - Slim (`slim`)
 - Smalltalk (`smalltalk`)

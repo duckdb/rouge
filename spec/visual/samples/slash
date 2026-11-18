@@ -1,0 +1,9 @@
+/join #general
+/me waves hello
+/nick bob_the_builder
+/msg alice See you at 5 (or later)!
+/set-topic2 Weekly sync: notes at https://example.org/notes
+  /away back in 10 minutes
+type /help. for a list of commands, or /quit to leave
+not commands: and/or, /usr/bin/env, http://example.org, a lone / slash
+just a normal message, 100% plain text
